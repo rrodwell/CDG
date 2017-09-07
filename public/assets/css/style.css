@@ -1,5 +1,6 @@
 body {
-    background-color: rgba(0, 86, 184, 0.95);
+    background-color: lightgrey;
+    /*background-color: rgba(0, 86, 184, 0.95);*/
     /*background-image: url(../images/brushedSteel.jpg);*/
     /*background-size: cover;*/
 }
@@ -8,7 +9,8 @@ body {
 nav {
     /*background-image: url(../images/brushedSteel.jpg);*/
     /*background-size: cover;*/
-    background-color: rgb(245,245,245);
+    /*background-color: rgb(245,245,245);*/
+    background-color: whitesmoke;
     height: 110px;
     /*box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
@@ -115,8 +117,8 @@ h3 {
 
 /*Packages*/
 .package-body {
-    width: 99%;
-    margin: 30px auto;
+    width: 100%;
+    margin: 30px auto 0 auto;
     background-image: url(../images/brushedSteel.jpg);
     background-size: cover;
     /*background-color: whitesmoke;*/
@@ -125,7 +127,7 @@ h3 {
 }
 
 .packages{
-    width: 100%;
+    width: 99%;
     margin: auto;
 }
 
@@ -152,8 +154,8 @@ h3 {
 }
 
 .test {
-    background-color: lightgrey;
-    width: 97%;
+    background-color: whitesmoke;
+    width: 100%;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6), 0 0 5px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -213,15 +215,15 @@ h3 {
     top: 2% !important;
     width: 95%;
     max-height: 100%;
-    background-color: rgba(211, 211, 211, 0.95);
-    color: #f5f5f5;
+    /*background-color: rgba(211, 211, 211, 0.95);*/
+    color: #000;
     font-weight: 600;
     font-family: 'Roboto', sans-serif;
-    text-shadow: 2px 2px 5px black;
+    /*text-shadow: 2px 2px 5px black;*/
 }
 
 .btn-modal {
-    color: #ffffff;
+    color: lightgrey;
 }
 
 
@@ -286,10 +288,11 @@ form {
 
 /*Footer*/
 .page-footer {
+    /*background-color: whitesmoke;*/
     background-color: rgba(0,86,184, 0.98);
     /*background-image: url(../images/brushedSteel.jpg);*/
     /*background-size: cover;*/
-    color: #f5f5f5;
+    color: #000000;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6), 0 0 5px 0 rgba(0, 0, 0, 0.19);
 
 }
@@ -307,17 +310,17 @@ form {
 footer h5 {
     text-align: right;
     font-size: xx-large;
-    text-shadow: 2px 2px 5px black;
+    /*text-shadow: 2px 2px 5px black;*/
 }
 
 .footer-info .footer-address {
     font-size: x-large;
-    text-shadow: 2px 2px 5px black;
+    /*text-shadow: 2px 2px 5px black;*/
 }
 .footer-info {
     text-align: right;
     font-size: large;
-    text-shadow: 2px 2px 5px black;
+    /*text-shadow: 2px 2px 5px black;*/
 }
 
 
