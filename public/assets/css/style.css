@@ -343,18 +343,23 @@ form {
 
 footer h5 {
     text-align: right;
-    font-size: xx-large;
-    /*text-shadow: 2px 2px 5px black;*/
+    font-size: x-large;
+    text-shadow: 2px 2px 5px black;
 }
 
 footer a {
     color: #ededed;
 }
 
-.footer-info .footer-address {
-    font-size: x-large;
-    /*text-shadow: 2px 2px 5px black;*/
+.footer-links li{
+    font-size: 1.4rem;
+    display: inline-block;
+    padding: 15px;
 }
+
+
+
+
 .footer-info {
     text-align: right;
     font-size: large;
