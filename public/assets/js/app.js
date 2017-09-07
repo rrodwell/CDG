@@ -81,5 +81,5 @@ $(document).ready(function() {
 
     // Map
     console.log($(".contact-us").height());
-    $(".find-us").css("height", $(".something-else").height());
+    $(".find-us").css("height", $(".connect-section").height());
 });
