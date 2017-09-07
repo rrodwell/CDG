@@ -210,10 +210,15 @@ nav #dropdown2 li.brand-nav:hover a:hover {
 .card-container-title h1 {
     padding-top: 10px;
     margin: 10px 0 10px 0;
-    text-shadow: 1px 1px 3px black;
+    text-shadow: 1px 1px 2px black;
     font-weight: 600;
     color: #0056B8;
     font-family: 'Roboto', sans-serif;
+    display: inline-block;
+}
+
+.brand-logo img {
+    -webkit-filter: brightness(1%);
 }
 
 /*.first-title {*/
@@ -480,6 +485,11 @@ footer a {
     .card-btn {
         height: 50px;
         width: 100%;
+    }
+
+    .brand-logo img {
+        width: 60px !important;
+        height: 85px !important;
     }
 
     #flex {

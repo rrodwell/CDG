@@ -2,6 +2,11 @@
  * Created by ryanrodwell on 8/22/17.
  */
 $(document).ready(function() {
+    var isLargeWindow;
+    $(window).on('resize', function() {
+        isLargeWindow = $(this).width() > 992;
+    });
+
 
     var mc_width = 410 * $(".mc-packages").length;
     $(".mc-inner").css("width", mc_width);
@@ -49,8 +54,13 @@ $(document).ready(function() {
     // Modals
     $('.modal').modal();
 
-    $('.alphabet').click(function() {
-        $('#modal1').modal('open');
+    $('.alphabet').click(function(err) {
+        if (isLargeWindow) {
+            $('#modal1').modal('open');
+        } else {
+            var w = window.open('./assets/catalogs/ALPHABET2017.pdf', '_blank');
+            w.focus();
+        }
     });
 
     $('.remixA').click(function() {
