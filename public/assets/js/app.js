@@ -12,7 +12,7 @@ $(document).ready(function() {
     $('select').material_select();
 
     $('.slider').slider({
-        height: '470px',
+        height: '600px',
         indicators: false
     });
 
