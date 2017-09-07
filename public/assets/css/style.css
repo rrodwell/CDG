@@ -33,7 +33,7 @@ nav .button-collapse i {
     margin-top: 50%;
 }
 
-.brand-logo{
+.company-logo{
     width: 350px;
     height: auto;
     margin: 5px 0 0 10px;
@@ -207,12 +207,13 @@ nav #dropdown2 li.brand-nav:hover a:hover {
     padding: 0 0 10px 0;
 }
 
-.card-container-title h3 {
+.card-container-title h1 {
     padding-top: 10px;
     margin: 10px 0 10px 0;
-    color: #000000;
-    text-shadow: none;
+    text-shadow: 1px 1px 3px black;
     font-weight: 600;
+    color: #0056B8;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*.first-title {*/
@@ -378,7 +379,7 @@ footer a {
         height: 90px;
     }
 
-    .brand-logo{
+    .company-logo{
         width: 300px;
         height: auto;
     }
@@ -414,7 +415,7 @@ footer a {
         height: 95px;
     }
 
-    .brand-logo{
+    .company-logo{
         width: 300px;
         height: auto;
     }
