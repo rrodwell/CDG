@@ -130,6 +130,7 @@ nav #dropdown2 li.brand-nav:hover a:hover {
     font-weight: bold;
     margin-bottom: 0;
     padding-bottom: 30px;
+    text-align: center;
 }
 
 #logo {
@@ -188,6 +189,10 @@ nav #dropdown2 li.brand-nav:hover a:hover {
 
 .card-title {
     text-shadow: 2px 2px 5px black;
+}
+
+.card-content{
+    background-color: #dfdfdf;
 }
 
 .card-image img {
@@ -357,15 +362,15 @@ footer a {
     padding: 15px;
 }
 
-
-
-
 .footer-info {
     text-align: right;
     font-size: large;
     /*text-shadow: 2px 2px 5px black;*/
 }
 
+.footer-links {
+    margin-top: 0;
+}
 
 /*Media Queries*/
 @media (max-width: 1200px) {
@@ -387,12 +392,20 @@ footer a {
         width: 50%;
     }
 
-    .footer-info .footer-address {
-        font-size: large;
+    .promo-caption {
+        font-size: 2.1rem;
+    }
+
+    .promo p:not(.promo-caption) {
+        font-size: 1.4rem;
     }
 
     .footer-info {
         font-size: medium;
+    }
+
+    .footer-links li{
+        font-size: large;
     }
 }
 
@@ -418,16 +431,24 @@ footer a {
         font-size: x-large;
     }
 
+    .promo-caption {
+        font-size: 1.6rem;
+    }
+
+    .promo p:not(.promo-caption) {
+        font-size: large;
+    }
+
     footer h5 {
         font-size: large;
     }
 
-    .footer-info .footer-address {
+    .footer-info {
         font-size: small;
     }
 
-    .footer-info {
-        font-size: small;
+    .footer-links li{
+        font-size: medium;
     }
 
     .copyright {
@@ -478,6 +499,31 @@ footer a {
     #flex-c {
         order: 3;
         margin: 0;
+    }
+
+    .section{
+        padding: 15px 5px 5px 5px;
+    }
+    .services-container {
+        width: 100%;
+    }
+    .services-container .col {
+        padding: 7px;
+    }
+    .promo i {
+        font-size: 5rem;
+    }
+
+    .promo-caption {
+        font-size: 1.2rem;
+    }
+
+    .promo p:not(.promo-caption) {
+        font-size: small;
+    }
+
+    .footer-links li{
+        font-size: small;
     }
 
 }
