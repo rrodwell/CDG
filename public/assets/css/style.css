@@ -22,10 +22,6 @@ nav ul:not(.side-nav) a {
     /*text-shadow: 2px 2px 5px black;*/
 }
 
-/*nav ul li:not(.li-last) a{*/
-    /*border-right: 1px #818181 solid;*/
-/*}*/
-
 nav .button-collapse {
     color: #000000;
 }
@@ -99,7 +95,7 @@ h3 {
 }
 
 .main-section h4 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 32pt;
     font-weight: bold;
     margin-bottom: 0;
@@ -207,15 +203,17 @@ h3 {
     top: 2% !important;
     width: 95%;
     max-height: 100%;
+    background-color: rgba(211, 211, 211, 0.95);
+    color: #f5f5f5;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px 5px black;
 }
 
 .btn-modal {
-    color: lightgray;
+    color: #ffffff;
 }
 
-.btn-modal:hover{
-    color: red;
-}
 
 
 /*Connect*/
