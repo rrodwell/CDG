@@ -463,7 +463,7 @@ footer a {
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
     .brand-packages {
         width: 285px;
     }
@@ -485,6 +485,10 @@ footer a {
     .card-btn {
         height: 50px;
         width: 100%;
+    }
+
+    .card-container-title h1 {
+        font-size: 36pt;
     }
 
     .brand-logo img {
