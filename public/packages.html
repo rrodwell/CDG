@@ -13,6 +13,7 @@
 
     <!--Google Font-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -81,11 +82,18 @@
         </nav>
 
         <div class="package-body">
-            <div class="container packages">
+            <div class="packages">
 
                 <!--Card slider-->
                 <div class="card-container" id="mcdonalds">
-                    <h3>McDonald's</h3>
+                    <div class="row card-container-title first-title">
+                        <div class="col s3 m5">
+                            <img class="right" src="./assets/images/McDlogo.jpg" width="90px" height="75px">
+                        </div>
+                        <div class="col s3 m7">
+                            <h3 class="left">MCDONALD'S</h3>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col s1 card-section right-align">
                             <a class="btn card-btn mc-back"><i class="material-icons">chevron_left</i></a>
@@ -160,7 +168,14 @@
                 </div><!--card-container-->
 
                 <div class="card-container" id="burgerking">
-                    <h3>Burger King</h3>
+                    <div class="row card-container-title">
+                        <div class="col s3 m5">
+                            <img class="right" src="./assets/images/BKlogo.jpg" width="75px" height="75px">
+                        </div>
+                        <div class="col s9 m7">
+                            <h3 class="left">BURGER KING</h3>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col s1 card-section right-align">
                             <a class="btn card-btn bk-back"><i class="material-icons">chevron_left</i></a>
@@ -171,7 +186,7 @@
                                     <div class="container-inner bk-inner">
                                         <div class="brand-packages bk-packages">
                                             <div class="card hoverable alphabet">
-                                                <div class="card-image" id="mc-package1">
+                                                <div class="card-image" id="bk-package1">
                                                     <img src="./assets/images/BKrestaurant.jpg">
                                                     <span class="card-title">ALPHABET</span>
                                                 </div>
@@ -181,7 +196,7 @@
                                             </div>
                                         </div>
                                         <div class="brand-packages bk-packages">
-                                            <div class="card hoverable remixA" id="mc-package2">
+                                            <div class="card hoverable remixA" id="bk-package2">
                                                 <div class="card-image">
                                                     <img src="./assets/images/BKrestaurant.jpg">
                                                     <span class="card-title">REMIX A</span>
@@ -192,7 +207,7 @@
                                             </div>
                                         </div>
                                         <div class="brand-packages bk-packages">
-                                            <div class="card hoverable remixB" id="mc-package3">
+                                            <div class="card hoverable remixB" id="bk-package3">
                                                 <div class="card-image">
                                                     <img src="./assets/images/BKrestaurant.jpg">
                                                     <span class="card-title">REMIX B</span>
@@ -203,7 +218,7 @@
                                             </div>
                                         </div>
                                         <div class="brand-packages bk-packages">
-                                            <div class="card hoverable remixC" id="mc-package4">
+                                            <div class="card hoverable remixC" id="bk-package4">
                                                 <div class="card-image">
                                                     <img src="./assets/images/BKrestaurant.jpg">
                                                     <span class="card-title">REMIX C</span>
@@ -214,7 +229,7 @@
                                             </div>
                                         </div>
                                         <div class="brand-packages bk-packages">
-                                            <div class="card hoverable simplyModern" id="mc-package5">
+                                            <div class="card hoverable simplyModern" id="bk-package5">
                                                 <div class="card-image">
                                                     <img src="./assets/images/BKrestaurant.jpg">
                                                     <span class="card-title">SIMPLY MODERN</span>
@@ -259,7 +274,7 @@
                         <h4 class="center-align">ALPHABET</h4>
                     </div>
                     <div class="col s1 right-align">
-                        <a href="#!" class="modal-action modal-close btn-modal"><i class="small material-icons">cancel</i></a>
+                        <a class="modal-action modal-close btn-modal"><i class="small material-icons">cancel</i></a>
                     </div>
                     <div class="col s12">
                         <object data="./assets/catalogs/ALPHABET2017.pdf#view=Fit" type="application/pdf" width="100%" height="700px">
@@ -279,7 +294,7 @@
                         <h4 class="center-align">REMIX A</h4>
                     </div>
                     <div class="col s1 right-align">
-                        <a href="#!" class="modal-action modal-close btn-modal"><i class="small material-icons">cancel</i></a>
+                        <a class="modal-action modal-close btn-modal"><i class="small material-icons">cancel</i></a>
                     </div>
                     <div class="col s12">
                         <object data="./assets/catalogs/REMIXA2017.pdf#view=Fit" type="application/pdf" width="100%" height="700px">
@@ -299,7 +314,7 @@
                         <h4 class="center-align">REMIX B</h4>
                     </div>
                     <div class="col s1 right-align">
-                        <a href="#!" class="modal-action modal-close btn-modal"><i class="small material-icons">cancel</i></a>
+                        <a class="modal-action modal-close btn-modal"><i class="small material-icons">cancel</i></a>
                     </div>
                     <div class="col s12">
                         <object data="./assets/catalogs/REMIXB2017.pdf#view=Fit" type="application/pdf" width="100%" height="700px">
@@ -319,7 +334,7 @@
                         <h4 class="center-align">REMIX C</h4>
                     </div>
                     <div class="col s1 right-align">
-                        <a href="#!" class="modal-action modal-close btn-modal"><i class="small material-icons">cancel</i></a>
+                        <a class="modal-action modal-close btn-modal"><i class="small material-icons">cancel</i></a>
                     </div>
                     <div class="col s12">
                         <object data="./assets/catalogs/REMIXC2017.pdf#view=Fit" type="application/pdf" width="100%" height="700px">
@@ -339,7 +354,7 @@
                         <h4 class="center-align">SIMPLY MODERN</h4>
                     </div>
                     <div class="col s1 right-align">
-                        <a href="#!" class="modal-action modal-close btn-modal"><i class="small material-icons">cancel</i></a>
+                        <a class="modal-action modal-close btn-modal"><i class="small material-icons">cancel</i></a>
                     </div>
                     <div class="col s12">
                         <object data="./assets/catalogs/SM2017.pdf#view=Fit" type="application/pdf" width="100%" height="700px">
@@ -360,8 +375,8 @@
                 <div class="row">
                     <div class="col l6 s12">
                     </div>
-                    <div class="col l4 offset-l10 s6">
-                        <h5 class="white-text">Our Office</h5>
+                    <div class="col l5 offset-l9 s6 offset-s6">
+                        <h5 class="white-text">CASABLANCA DESIGN GROUP, LLC.</h5>
                         <ul class="footer-info">
                             <li class="footer-address"><a class="grey-text text-lighten-3">811 Pickens Industrial Dr.</a></li>
                             <li class="footer-address"><a class="grey-text text-lighten-3">Marietta, GA 30062</a></li>

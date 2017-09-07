@@ -68,4 +68,8 @@ $(document).ready(function() {
     $('.simplyModern').click(function() {
         $('#modal5').modal('open');
     });
+
+    // Map
+    console.log($(".contact-us").height());
+    $(".find-us").css("height", $(".something-else").height());
 });
