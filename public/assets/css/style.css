@@ -6,11 +6,11 @@ body {
 
 /*Navbar*/
 nav {
-    background-image: url(../images/brushedSteel.jpg);
-    background-size: cover;
-    /*background-color: rgba(245,245,245,0.85);*/
-    height: 70pt;
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /*background-image: url(../images/brushedSteel.jpg);*/
+    /*background-size: cover;*/
+    background-color: rgb(245,245,245);
+    height: 110px;
+    /*box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
 
 nav ul:not(.side-nav) a {
@@ -32,10 +32,11 @@ nav .button-collapse i {
 }
 
 .brand-logo{
-    width: 275px;
+    width: 350px;
     height: auto;
     margin: 5px 0 0 10px;
 }
+
 
 nav #dropdown2 li.brand-nav {
     font-weight: 800;
@@ -81,8 +82,7 @@ h3 {
 }
 
 .card-image img {
-    height: 275px;
-    width: 300px;
+    height: 350px;
 }
 
 
@@ -90,8 +90,9 @@ h3 {
 /*Under Construction*/
 .main-section {
     width: 100%;
+    background-image: url(../images/brushedSteel.jpg);
+    background-size: cover;
     text-align: center;
-    background-color: rgba(245,245,245,0.8);
 }
 
 .main-section h4 {
@@ -115,16 +116,17 @@ h3 {
 /*Packages*/
 .package-body {
     width: 99%;
-    margin: 10px auto;
+    margin: 30px auto;
     background-image: url(../images/brushedSteel.jpg);
     background-size: cover;
-    padding-top: 15px;
+    /*background-color: whitesmoke;*/
+    padding-top: 10px;
     padding-bottom: 5px;
 }
 
 .packages{
-    width: 98%;
-    margin: 5px auto;
+    width: 100%;
+    margin: auto;
 }
 
 .card-container-title .col {
@@ -138,20 +140,27 @@ h3 {
 
 .container-outer {
     overflow: scroll;
-    height: 420px;
+    height: 500px;
     width: 100%;
-    background-color: rgba(211, 211, 211, 0.95);
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6), 0 0 5px 0 rgba(0, 0, 0, 0.19);
+    /*background-color: rgba(211, 211, 211, 0.95);*/
+    background-color: transparent;
+    /*box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6), 0 0 5px 0 rgba(0, 0, 0, 0.19);*/
 }
 
 .container-inner {
-    height: 400px;
+    height: 480px;
+}
+
+.test {
+    background-color: lightgrey;
+    width: 97%;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6), 0 0 5px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card-container{
     width: 100%;
     height: auto;
-    background-color: rgba(245, 245, 245, 0.95);
+    /*background-color: rgba(245, 245, 245, 0.95);*/
     margin-bottom: 3%;
     padding: 0 0 10px 0;
 }
@@ -173,12 +182,13 @@ h3 {
 }
 
 .card-btn {
-    height: 420px;
+    height: 500px;
     width: 50%;
-    background-color: rgba(211, 211, 211, 0.95);
+    /*background-color: rgba(211, 211, 211, 0.95);*/
+    background-color: transparent;
     padding: 0;
     margin: 0;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6), 0 0 5px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0 0px 0 rgba(0, 0, 0, 0.6), 0 0 0px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card-btn:hover {
@@ -189,12 +199,12 @@ h3 {
     color: black;
     opacity: 0.5;
     font-size: xx-large;
-    padding-top: 192px;
+    padding-top: 232px;
 }
 
 .brand-packages {
     display: inline-block;
-    width: 350px;
+    width: 375px;
     margin: 15px;
 }
 
@@ -225,7 +235,8 @@ h3 {
 .something {
     margin: 20px auto;
     width: 98%;
-    background-color: whitesmoke;
+    background-image: url(../images/brushedSteel.jpg);
+    background-size: cover;
 }
 .something h3, h4 {
     text-align: left;
@@ -261,14 +272,23 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 
 .send-email {
     margin: 0 5px 40px 0;
-    background-color: #0056B8;
+    background-color: #1e7a1e;
+}
+
+.send-email:hover {
+    background-color: #228d22;
+}
+
+form {
+    background-color: #f5f5f5;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6), 0 0 5px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*Footer*/
 .page-footer {
-    /*background-color: rgba(0,86,184, 0.98);*/
-    background-image: url(../images/brushedSteel.jpg);
-    background-size: cover;
+    background-color: rgba(0,86,184, 0.98);
+    /*background-image: url(../images/brushedSteel.jpg);*/
+    /*background-size: cover;*/
     color: #f5f5f5;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6), 0 0 5px 0 rgba(0, 0, 0, 0.19);
 
@@ -303,8 +323,12 @@ footer h5 {
 
 /*Media Queries*/
 @media (max-width: 1200px) {
+    nav {
+        height: 90px;
+    }
+
     .brand-logo{
-        width: 275px;
+        width: 300px;
         height: auto;
     }
 
@@ -327,8 +351,12 @@ footer h5 {
 }
 
 @media (max-width: 990px) {
+    nav {
+        height: 95px;
+    }
+
     .brand-logo{
-        width: 245px;
+        width: 300px;
         height: auto;
     }
 
@@ -337,12 +365,11 @@ footer h5 {
     }
 
     #logo{
-        width: 70%;
+        width: 50%;
     }
 
     .card-btn i {
         font-size: x-large;
-        padding-top: 192px;
     }
 
     footer h5 {
@@ -377,7 +404,34 @@ footer h5 {
     }
 
     .card-btn i {
-        font-size: large;
+        font-size: x-large;
+        padding: 0;
+        vertical-align: middle;
+    }
+
+    .card-btn {
+        height: 50px;
+        width: 100%;
+    }
+
+    #flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #flex-a {
+        order: 2;
+        margin: 0;
+    }
+
+    #flex-b {
+        order: 1;
+        margin: 0 auto;
+    }
+
+    #flex-c {
+        order: 3;
+        margin: 0;
     }
 
 }

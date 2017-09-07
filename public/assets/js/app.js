@@ -3,10 +3,10 @@
  */
 $(document).ready(function() {
 
-    var mc_width = 385 * $(".mc-packages").length;
+    var mc_width = 410 * $(".mc-packages").length;
     $(".mc-inner").css("width", mc_width);
 
-    var bk_width = 385 * $(".bk-packages").length;
+    var bk_width = 410 * $(".bk-packages").length;
     $(".bk-inner").css("width", bk_width);
 
     $('select').material_select();
