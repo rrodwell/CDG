@@ -35,6 +35,7 @@ nav .button-collapse i {
 
 .side-nav {
     background-color: rgba(0,86,184,0.95);
+    width: auto;
 }
 
 .side-nav li>a {
@@ -331,13 +332,13 @@ nav #dropdown2 li.brand-nav:hover a:hover {
 }
 
 .office-address ul li a {
-    font-size: 20pt;
+    font-size: 18pt;
     font-weight: 500;
     color: #242424;
 }
 
 .office-address h5 {
-    font-size: 18pt;
+    font-size: 16pt;
     color: #808080;
 }
 
@@ -474,6 +475,10 @@ footer a {
         font-size: 27pt;
     }
 
+    .main {
+        padding-top: 25px;
+    }
+
     #logo{
         width: 50%;
     }
@@ -507,6 +512,10 @@ footer a {
 
     .main-section h4 {
         font-size: 22pt;
+    }
+
+    .main {
+        padding-top: 25px;
     }
 
     #logo{
@@ -544,6 +553,7 @@ footer a {
 }
 
 @media (max-width: 640px) {
+
     .brand-packages {
         width: 285px;
     }
@@ -618,7 +628,7 @@ footer a {
     }
 
     .footer-links li{
-        font-size: small;
+        font-size: x-small;
     }
 
 }
