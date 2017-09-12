@@ -34,43 +34,50 @@
 </head>
     <body>
 
-        <!-- Dropdown Structure -->
-        <ul id="dropdown1" class="dropdown-content">
-            <li class="dropdown-title"><a href="/Brands" class="dropdown-title">Brands</a></li>
-            <li><a href="/Brands">McDonald's</a></li>
-            <li><a href="/Brands">Burger King</a></li>
-            <li><a href="/Brands">Popeyes</a></li>
-        </ul>
-
-        <ul id="dropdown2" class="dropdown-content">
-            <li class="dropdown-title"><a href="/Packages" class="dropdown-title">Packages</a></li>
-            <li class="brand-nav"><a href="/Packages#mcdonalds" class="brand-nav">McDonald's</a></li>
-            <li class="divider"></li>
-            <li><a href="/Packages#mc-package1">Alphabet</a></li>
-            <li><a href="/Packages#mc-package2">Remix A</a></li>
-            <li><a href="/Packages#mc-package3">Remix B</a></li>
-            <li><a href="/Packages#mc-package4">Remix C</a></li>
-            <li><a href="/Packages#mc-package5">Simply Modern</a></li>
-            <li class="divider"></li>
-            <li class="brand-nav"><a href="/Packages#burgerking" class="brand-nav">Burger King</a></li>
-            <li class="divider"></li>
-            <li><a href="/Packages#bk-package6">Burger King 1</a></li>
-        </ul>
-
-
         <div class="navbar-fixed">
             <nav>
                 <div class="nav-wrapper">
                     <a href="/" class="company-logo"><img class=" company-logo" src="assets/images/CDGlogo.png"></a>
                     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class=" material-icons">menu</i></a>
-                    <ul class="right hide-on-med-and-down">
+
+                    <ul class="right hide-on-med-and-down nav-ul">
+
                         <li><a href="/">Home</a></li>
                         <li><a href="/About">About</a></li>
-                        <li><a class="dropdown-button" href="#!" data-activates="dropdown1" href="/Packages">Brands</a></li>
-                        <li><a class="dropdown-button" data-activates="dropdown2" href="/Packages">Packages</a></li>
+
+                        <li class="dropdown">
+                            <a class="dropdown-button" data-activates="dropdown1" href="/Packages">Brands<i class="material-icons right">arrow_drop_down</i></a>
+                            <!-- Dropdown -->
+                            <ul id="dropdown1" class="dropdown-content">
+                                <li><a href="/Brands">McDonald's</a></li>
+                                <li><a href="/Brands">Burger King</a></li>
+                                <li><a href="/Brands">Popeyes</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a class="dropdown-button" data-activates="dropdown2" href="/Packages">Packages<i class="material-icons right">arrow_drop_down</i></a>
+                            <!-- Dropdown -->
+                            <ul id="dropdown2" class="dropdown-content">
+                                <li class="brand-nav"><a href="/Packages#mcdonalds" class="brand-nav">McDonald's</a></li>
+                                <li class="divider"></li>
+                                <li><a href="/Packages#mc-package1">Alphabet</a></li>
+                                <li><a href="/Packages#mc-package2">Remix A</a></li>
+                                <li><a href="/Packages#mc-package3">Remix B</a></li>
+                                <li><a href="/Packages#mc-package4">Remix C</a></li>
+                                <li><a href="/Packages#mc-package5">Simply Modern</a></li>
+                                <li class="divider"></li>
+                                <li class="brand-nav"><a href="/Packages#burgerking" class="brand-nav">Burger King</a></li>
+                                <li class="divider"></li>
+                                <li><a href="/Packages#bk-package6">Burger King 1</a></li>
+                            </ul>
+                        </li>
+
                         <li><a href="/Payments">Payments</a></li>
                         <li class="li-last"><a href="/Connect">Connect</a></li>
+
                     </ul>
+
                 </div>
             </nav>
         </div>
@@ -105,36 +112,13 @@
                         </ul>
                     </div><!--slider-->
                 </div><!--container-->
-
-                        <!--<div class="col s12 m4">-->
-                            <!--<div class="card card-shadow hoverable" onclick="location.href='/Packages#mcdonalds'">-->
-                                <!--<div class="card-image">-->
-                                    <!--<img src="./assets/images/MCrestaurant.jpg">-->
-                                    <!--<span class="card-title">McDonald's</span>-->
-                                <!--</div>-->
-                                <!--<div class="card-content">-->
-                                    <!--<p>I am a very simple card. I am good at containing small bits of information.</p>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="col s12 m4">-->
-                            <!--<div class="card services-card hoverable">-->
-                                <!--<div class="card-image">-->
-                                    <!--<img src="./assets/images/POrestaurant.jpg">-->
-                                    <!--<span class="card-title">Popeyes</span>-->
-                                <!--</div>-->
-                                <!--<div class="card-content">-->
-                                    <!--<p>I am a very simple card. I am good at containing small bits of information.</p>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                        <!--</div>-->
             </div>
         </main>
 
         <footer class="page-footer">
             <div class="row">
-                <div class="col s12 footer-divder">
-                </div>
+                <!--<div class="col s12 footer-divder">-->
+                <!--</div>-->
                 <div class="col s6 offset-s6 m5 offset-m7 l6 offset-l6 footer-address">
                     <h5 class="white-text">CASABLANCA DESIGN GROUP, LLC.</h5>
                     <ul class="footer-info">

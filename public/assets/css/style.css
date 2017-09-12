@@ -1,12 +1,9 @@
 body {
     background-color: #f5f5f5;
-    /*background-color: rgba(0, 86, 184, 0.95);*/
-    /*background-image: url(../images/brushedSteel.jpg);*/
-    /*background-size: cover;*/
-
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    font-family: LaoUI;
 }
 
 /*Custom Fonts*/
@@ -18,24 +15,26 @@ body {
 @font-face {
     font-family: Kalinga;
     src: url(../fonts/KalingaRegular/KalingaRegular.ttf);
-
 }
 
 /*Navbar*/
 nav {
-    /*background-image: url(../images/brushedSteel.jpg);*/
-    /*background-size: cover;*/
-    /*background-color: rgb(245,245,245);*/
     background-color: #f5f5f5;
     height: 110px;
-    font-family: LaoUI;
+}
+
+.nav-ul, .nav-ul li i {
+    line-height: 110px;
+    margin: 0;
 }
 
 nav ul:not(.side-nav) a {
     color: #000000;
     font-size: 16pt;
-    /*font-weight: 400;*/
-    margin-top: 15px;
+}
+
+nav ul:not(.side-nav) a:hover {
+    color: #0056B8;
 }
 
 nav .button-collapse {
@@ -59,20 +58,11 @@ nav .button-collapse i {
     width: 70px;
     height: 70px;
 }
+
 .company-logo{
     width: 350px;
     height: auto;
     margin: 5px 0 0 10px;
-}
-
-.dropdown-content .dropdown-title{
-    font-weight: 800 !important;
-    background-color: #0056B8;
-    color: #f5f5f5;
-}
-
-.dropdown-content .dropdown-title:hover {
-    background-color: #0062d3;
 }
 
 .dropdown-content li>a:not(.brand-nav){
@@ -87,6 +77,11 @@ nav .button-collapse i {
 
 nav #dropdown2 li.brand-nav:hover a:hover {
     background-color: transparent;
+}
+
+nav ul a.active {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #0056B8;
 }
 
 main {
@@ -106,60 +101,9 @@ main {
 }
 
 .slider .slides {
-    height: 600px !important;
+    height: 100% !important;
 }
 
-
-.section h3 {
-    color: #f5f5f5;
-    text-shadow: 2px 2px 5px black;
-    text-align: center;
-    padding-left: 10px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 4rem;
-}
-
-.section {
-    background-image: url(../images/brushedSteel.jpg);
-    background-size: cover;
-    /*background-color: rgba(0,86,185, 0.98);*/
-    width: 100%;
-    padding: 30px
-}
-
-
-.services-container {
-    width: 85%;
-    margin: 0 auto;
-}
-
-.services-container .col {
-    padding:20px 50px 0 50px;
-}
-
-.services-container .row {
-    margin-bottom: 0;
-}
-
-.promo i {
-    font-size: 9rem;
-    color: #0056B8;
-}
-
-.promo-caption {
-    font-size: 2.5rem;
-    font-weight: 500;
-    margin-top: 5px;
-    margin-bottom: 0;
-    color: whitesmoke;
-    text-shadow: 2px 2px 5px black;
-
-}
-
-.promo p:not(.promo-caption) {
-    font-size: 1.5rem;
-    font-weight: 400;
-}
 /*Under Construction*/
 .main-section {
     width: 100%;
@@ -483,6 +427,14 @@ footer a {
         height: 90px;
     }
 
+    .nav-ul, .nav-ul li i {
+        line-height: 90px;
+    }
+
+    nav ul:not(.side-nav) a {
+        font-size: 14pt;
+    }
+
     .company-logo{
         width: 300px;
         height: auto;
@@ -518,6 +470,14 @@ footer a {
 @media (max-width: 990px) {
     nav {
         height: 95px;
+    }
+
+    .nav-ul, .nav-ul li i {
+        line-height: 95px;
+    }
+
+    nav ul:not(.side-nav) a {
+        font-size: 12pt;
     }
 
     .company-logo{
