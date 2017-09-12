@@ -9,6 +9,7 @@ body {
     flex-direction: column;
 }
 
+/*Custom Fonts*/
 @font-face {
     font-family: LaoUI;
     src: url(../fonts/LaoUIRegular/LaoUIRegular.ttf);
