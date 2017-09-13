@@ -441,7 +441,7 @@ footer a {
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 100px;
+    padding-top: 20px;
     left: 0;
     top: 0;
     width: 100%;
@@ -529,6 +529,8 @@ footer a {
 
 img.demo {
     opacity: 0.6;
+    width: 100%;
+    height: auto;
 }
 
 .active,
