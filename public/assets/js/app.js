@@ -62,26 +62,76 @@ $(document).ready(function() {
         }, 1000);
     });
 
+    //Modals functions
+    var packages = {
 
-    // Modals
+        mcdonalds: {
+
+            alphabet: {
+                imgList: ["ALPHABET-1.jpg","ALPHABET-2.jpg","ALPHABET-3.jpg","ALPHABET-4.jpg"],
+                altName: "Alphabet Catalog - "
+            },
+            remixA: {
+                imgList: ["REMIXA-1.jpg","REMIXA-2.jpg","REMIXA-3.jpg","REMIXA-4.jpg"],
+                altName: "Remix A Catalog - "
+            },
+            remixB: {
+                imgList: ["REMIXB-1.jpg","REMIXB-2.jpg","REMIXB-3.jpg","REMIXB-4.jpg"],
+                altName: "Remix B Catalog - "
+            },
+            remixC: {
+                imgList: ["REMIXC-1.jpg","REMIXC-2.jpg","REMIXC-3.jpg","REMIXC-4.jpg"],
+                altName: "Remix C Catalog - "
+            },
+            simplyModern: {
+                imgList: ["SM-1.jpg","SM-2.jpg","SM-3.jpg","SM-4.jpg"],
+                altName: "Simply Modern Catalog - "
+            }
+        },
+
+        burgerKing: {
+
+        }
+    };
+
     $('.modal').modal();
 
-    // $('.alphabet').click(function(err) {
-    //     if (isLargeWindow) {
-    //         $('#modal1').modal('open');
-    //     } else {
-    //         var w = window.open('./assets/catalogs/ALPHABET2017.pdf', '_blank');
-    //         w.focus();
-    //     }
+    $(".card").click(function() {
+
+        var myClass = $(this).attr("class");
+        var split = myClass.split(" ");
+        var classNeeded = split[2];
+
+        if(classNeeded === "alphabet"){
+            imgSrc = packages.mcdonalds.alphabet.imgList;
+            alt = packages.mcdonalds.alphabet.altName;
+            for(var i = 0; i < imgSrc.length; i++) {
+                console.log("A-ran"+ i);
+                var src = "./assets/catalogs/"+imgSrc[i];
+                runModal(i, src, alt);
+            }
+
+        } else if(classNeeded === "remixA") {
+            imgSrc = packages.mcdonalds.remixA.imgList;
+            alt = packages.mcdonalds.remixA.altName;
+            for(var i = 0; i < imgSrc.length; i++) {
+                console.log("R-ran" +i);
+                var src = "./assets/catalogs/"+imgSrc[i];
+                runModal(i, src, alt);
+            }
+        }
+    });
+
+    // Modals
+    // $('.modal').modal();
+
+    // $('.alphabet').click(function() {
+    //     $('#myModal').modal('open');
     // });
 
-    $('.alphabet').click(function() {
-        $('#myModal').modal('open');
-    });
-
-    $('.remixA').click(function() {
-        $('#modal2').modal('open');
-    });
+    // $('.remixA').click(function() {
+    //     $('#modal2').modal('open');
+    // });
 
     $('.remixB').click(function() {
         $('#modal3').modal('open');
@@ -100,6 +150,11 @@ $(document).ready(function() {
     $(".find-us").css("height", $(".connect-section").height());
 });
 
+function runModal (i, source, alt) {
+    $(".largeImg-"+i).attr("src", source);
+    $(".thumbnail-"+i).attr("src", source).attr("alt", alt);
+    $('#myModal').modal('open');
+}
 
 function openModal() {
     document.getElementById('myModal').style.display = "block";
@@ -123,18 +178,22 @@ function currentSlide(n) {
 
 function showSlides(n) {
     var i;
+
     var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demo");
-    var captionText = document.getElementById("caption");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
+    var dots = document.getElementsByClassName("thumbnail");
+    if (n > slides.length) {
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-    captionText.innerHTML = dots[slideIndex-1].alt;
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    // captionText.innerHTML = dots[slideIndex-1].alt;
 }
