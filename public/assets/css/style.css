@@ -6,6 +6,7 @@ body {
     font-family: LaoUI;
 }
 
+
 /*Custom Fonts*/
 @font-face {
     font-family: LaoUI;
@@ -172,6 +173,12 @@ main {
     /*box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6), 0 0 5px 0 rgba(0, 0, 0, 0.19);*/
 }
 
+.container-outer::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+
 .container-inner {
     height: 480px;
 }
@@ -184,10 +191,6 @@ main {
 
 .card-title {
     text-shadow: 2px 2px 5px black;
-}
-
-.card-content{
-    background-color: #dfdfdf;
 }
 
 .card-image img {
