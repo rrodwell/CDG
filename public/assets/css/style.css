@@ -423,10 +423,9 @@ footer a {
     left: 0;
     top: 10px !important;
     width: 98%;
-    /*height: 100%*/
-    max-height: 98%;
+    max-height: 100%;
     overflow: auto;
-    background-color: rgb(72,72,72);
+    background-color: rgb(0, 0, 0);
 }
 
 .modal-content {
@@ -440,7 +439,7 @@ footer a {
 .modal-content .row {
     margin-bottom: 0;
     padding: 10px 0 10px 0;
-    background-color: rgb(72,72,72);
+    background-color: rgb(0, 0, 0);
 }
 
 .close {
