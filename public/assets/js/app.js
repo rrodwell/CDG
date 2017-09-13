@@ -119,30 +119,32 @@ $(document).ready(function() {
                 var src = "./assets/catalogs/"+imgSrc[i];
                 runModal(i, src, alt);
             }
+        } else if(classNeeded === "remixB") {
+            imgSrc = packages.mcdonalds.remixB.imgList;
+            alt = packages.mcdonalds.remixB.altName;
+            for(var i = 0; i < imgSrc.length; i++) {
+                console.log("R-ran" +i);
+                var src = "./assets/catalogs/"+imgSrc[i];
+                runModal(i, src, alt);
+            }
+        } else if(classNeeded === "remixC") {
+            imgSrc = packages.mcdonalds.remixC.imgList;
+            alt = packages.mcdonalds.remixC.altName;
+            for(var i = 0; i < imgSrc.length; i++) {
+                console.log("R-ran" +i);
+                var src = "./assets/catalogs/"+imgSrc[i];
+                runModal(i, src, alt);
+            }
+        } else if(classNeeded === "simplyModern") {
+            imgSrc = packages.mcdonalds.simplyModern.imgList;
+            alt = packages.mcdonalds.simplyModern.altName;
+            for(var i = 0; i < imgSrc.length; i++) {
+                console.log("R-ran" +i);
+                var src = "./assets/catalogs/"+imgSrc[i];
+                runModal(i, src, alt);
+            }
         }
-    });
-
-    // Modals
-    // $('.modal').modal();
-
-    // $('.alphabet').click(function() {
-    //     $('#myModal').modal('open');
-    // });
-
-    // $('.remixA').click(function() {
-    //     $('#modal2').modal('open');
-    // });
-
-    $('.remixB').click(function() {
-        $('#modal3').modal('open');
-    });
-
-    $('.remixC').click(function() {
-        $('#modal4').modal('open');
-    });
-
-    $('.simplyModern').click(function() {
-        $('#modal5').modal('open');
+        $('#packageModal').modal('open');
     });
 
     // Map
@@ -153,16 +155,15 @@ $(document).ready(function() {
 function runModal (i, source, alt) {
     $(".largeImg-"+i).attr("src", source);
     $(".thumbnail-"+i).attr("src", source).attr("alt", alt);
-    $('#myModal').modal('open');
 }
 
 function openModal() {
-    document.getElementById('myModal').style.display = "block";
+    document.getElementById('packageModal').style.display = "block";
 }
 
 function closeModal() {
-    document.getElementById('myModal').style.display = "none";
-    $('#myModal').modal('close');
+    document.getElementById('packageModal').style.display = "none";
+    $('#packageModal').modal('close');
 }
 
 var slideIndex = 1;
