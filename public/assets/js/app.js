@@ -66,13 +66,17 @@ $(document).ready(function() {
     // Modals
     $('.modal').modal();
 
-    $('.alphabet').click(function(err) {
-        if (isLargeWindow) {
-            $('#modal1').modal('open');
-        } else {
-            var w = window.open('./assets/catalogs/ALPHABET2017.pdf', '_blank');
-            w.focus();
-        }
+    // $('.alphabet').click(function(err) {
+    //     if (isLargeWindow) {
+    //         $('#modal1').modal('open');
+    //     } else {
+    //         var w = window.open('./assets/catalogs/ALPHABET2017.pdf', '_blank');
+    //         w.focus();
+    //     }
+    // });
+
+    $('.alphabet').click(function() {
+        $('#modal1').modal('open');
     });
 
     $('.remixA').click(function() {
