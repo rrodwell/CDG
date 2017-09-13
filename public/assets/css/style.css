@@ -423,6 +423,7 @@ footer a {
     left: 0;
     top: 10px !important;
     width: 98%;
+    height: 100%;
     max-height: 100%;
     overflow: auto;
     background-color: rgb(0, 0, 0);
@@ -430,7 +431,6 @@ footer a {
 
 .modal-content {
     position: relative;
-    background-color: lightgrey;
     padding: 10px !important;
     margin: 15px auto;
     width: 95%;
