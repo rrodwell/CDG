@@ -173,25 +173,25 @@ main {
     margin-bottom: 5px;
 }
 
-.slider {
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6), 0 0 5px 0 rgba(0, 0, 0, 0.19);
+/*Packages*/
+
+.package-body {
+    width: 99%;
+    margin: 40px auto 0 auto;
+    background-image: url(../images/brushedSteel.jpg);
+    background-size: cover;
+    /*background-color: whitesmoke;*/
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
 }
 
-/*!*Packages*!*/
-/*.package-body {*/
-    /*width: 100%;*/
-    /*margin: 30px auto 0 auto;*/
-    /*!*background-image: url(../images/brushedSteel.jpg);*!*/
-    /*!*background-size: cover;*!*/
-    /*!*background-color: whitesmoke;*!*/
-    /*padding-top: 10px;*/
-    /*padding-bottom: 5px;*/
-/*}*/
-
-/*.packages{*/
-    /*width: 99%;*/
-    /*margin: auto;*/
-/*}*/
+.packages{
+    width: 99%;
+    margin: auto;
+    background-color: whitesmoke;
+    padding-bottom: 5px;
+}
 
 /*.card-container-title .col {*/
     /*padding: 10px 0 0 0;*/
@@ -202,39 +202,60 @@ main {
 /*}*/
 
 
-/*.container-outer {*/
-    /*overflow: scroll;*/
-    /*height: 450px;*/
-    /*width: 100%;*/
-    /*!*background-color: rgba(211, 211, 211, 0.95);*!*/
-    /*background-color: transparent;*/
-    /*!*box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6), 0 0 5px 0 rgba(0, 0, 0, 0.19);*!*/
-/*}*/
-
-/*.container-outer::-webkit-scrollbar {*/
-    /*width: 0px;  !* remove scrollbar space *!*/
-    /*background: transparent;  !* optional: just make scrollbar invisible *!*/
-/*}*/
+.container-outer::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
 
 
-/*.container-inner {*/
-    /*height: 450px;*/
-/*}*/
+.container-outer {
+    overflow: hidden;
+    width: 100%;
+    background-image: url(../images/brushedSteel.jpg);
+    background-size: cover;
+    height: 500px;
+    padding: 20px 0 10px 0;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6), 0 0 5px 0 rgba(0, 0, 0, 0.19);
+}
 
-/*.test {*/
+.container-inner {
+    height: 100%;
+    padding-top: 10px;
+}
+
+.packages-carousel {
+    overflow: visible;
+    margin: 0 auto;
+    width: 60% !important;
+}
+
+.packages-carousel img {
+    width: 95% !important;
+    margin-left: 20px;
+}
+
+
+    /*.test {*/
     /*background-color: whitesmoke;*/
     /*width: 100%;*/
     /*box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6), 0 0 5px 0 rgba(0, 0, 0, 0.19);*/
 /*}*/
 
-/*.card-title {*/
-    /*text-shadow: 2px 2px 5px black;*/
-/*}*/
+.card-title {
+    text-shadow: 2px 2px 5px black;
+}
 
-/*.card-image img {*/
-    /*height: 350px;*/
-/*}*/
+.card-image img {
+    height: 350px;
+    width: 350px !important;
+}
 
+.card {
+    background-color: palegoldenrod;
+    width: 350px !important;
+    margin: 0 auto;
+}
 /*.card-container{*/
     /*width: 100%;*/
     /*height: auto;*/
