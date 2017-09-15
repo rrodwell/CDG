@@ -2,14 +2,21 @@
  * Created by ryanrodwell on 8/22/17.
  */
 $(document).ready(function() {
+
+    $('.dropdown-submenu a.test').on("click", function(e){
+        $(this).next('ul').toggle();
+        e.stopPropagation();
+        e.preventDefault();
+    });
+
     var isLargeWindow;
     $(window).on('resize', function() {
         isLargeWindow = $(this).width() > 992;
     });
 
 
-    var mc_width = 410 * $(".mc-packages").length;
-    $(".mc-inner").css("width", mc_width);
+    // var mc_width = 410 * $(".mc-packages").length;
+    // $(".mc-inner").css("width", mc_width);
 
     var bk_width = 410 * $(".bk-packages").length;
     $(".bk-inner").css("width", bk_width);
