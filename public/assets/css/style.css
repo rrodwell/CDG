@@ -23,7 +23,7 @@ body {
 /*Navbar*/
 nav {
     background-color: #f5f5f5;
-    height: 95px;
+    height: 120px;
     /*background-image: url(../images/brushedSteel.jpg);*/
     /*background-size: cover;*/
     box-shadow: 0 0 0px 0 rgba(0, 0, 0, 0.6), 0 0 0px 0 rgba(0, 0, 0, 0.19);
@@ -31,7 +31,7 @@ nav {
 }
 
 .nav-ul, .nav-ul li i {
-    line-height: 95px;
+    line-height: 120px;
     margin: 0;
 }
 
@@ -42,8 +42,18 @@ nav ul:not(.side-nav) a {
 
 nav ul:not(.side-nav) a:hover {
     background-color: transparent;
-    color: #0056B8;
+    color: #313131;
 }
+
+/*Nested Dropdown*/
+.dropdown-content.nested {
+    overflow-y: visible;
+}
+
+.dropdown-content .dropdown-content {
+    margin-left: 100%;
+}
+/**/
 
 nav .button-collapse {
     color: #000000;
@@ -68,9 +78,9 @@ nav .button-collapse i {
 }
 
 .company-logo{
-    width: 330px;
+    width: 375px;
     height: auto;
-    margin: 10px auto;
+    margin: 17px 0 18px 5px;
 }
 
 .dropdown-content li>a:not(.brand-nav){
@@ -94,6 +104,14 @@ nav ul a.active {
     color: #313131;
 }
 
+.dropdown-button-nested.active {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    color: #313131 !important;
+}
+
+a.dropdown-button-nested {
+    border: solid #f5f5f5 !important;
+}
 nav ul a.active:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
@@ -109,18 +127,25 @@ main {
     padding: 50px 5px 15px 5px;
 }
 
-.slider-body {
-    width: 100%;
-    height: 600px;
-    margin: auto;
+.carousel-controls {
+    position: absolute;
+    top: 55%;
 }
 
-.slider .slides img{
-
+.carousel-controls:hover {
+    background-color: rgba(0,0,0,0.3);
 }
 
-.slider .slides {
-    height: 100% !important;
+.carousel-controls i{
+    color: #f5f5f5;
+    font-size: 55pt;
+    font-weight: 600;
+    opacity: 0.85;
+}
+
+
+.carousel-fwd {
+    right: 5px;
 }
 
 /*Under Construction*/
@@ -381,13 +406,18 @@ form .row {
 
 .page-footer .row {
     margin: 0;
+    padding-bottom: 15px;
 }
 
 .copyright {
-    color: #ededed;
-    margin-left: 2%;
-    font-size: 9pt;
+    width: 100%;
     /*text-shadow: 1px 1px 2px black;*/
+}
+
+.copyright span {
+    float: right;
+    color: #313131;;
+    font-size: 8pt;
 }
 
 footer h5 {
@@ -547,6 +577,7 @@ img.hover-shadow {
     .company-logo{
         width: 300px;
         height: auto;
+        margin: 7px 0 5px 5px;
     }
 
 
