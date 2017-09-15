@@ -147,6 +147,10 @@ main {
     right: 5px;
 }
 
+#slider {
+    display: none;
+    visibility: hidden;
+}
 /*Under Construction*/
 .main-section {
     width: 100%;
@@ -560,6 +564,18 @@ img.hover-shadow {
 
 
 /*Media Queries*/
+
+@media only screen and (max-width: 1026px) {
+    .main{
+        display: none;
+        visibility: hidden;
+    }
+    #slider {
+        display: block;
+        visibility: visible;
+    }
+}
+
 @media (max-width: 1200px) {
     /*Nav*/
     nav {
@@ -641,10 +657,6 @@ img.hover-shadow {
 
     /*Main*/
 
-    main {
-        height: 300px !important;
-    }
-
     .main-section h4 {
         font-size: 22pt;
     }
@@ -673,7 +685,7 @@ img.hover-shadow {
         font-size: 11pt;
     }
 
-    .copyright {
+    .copyright span{
         font-size: x-small;
     }
 
@@ -809,12 +821,8 @@ img.hover-shadow {
         font-size: small;
     }
 
-    .copyright {
-        font-size: 6pt;
-    }
-
-    .footer-info li:last-child {
-        font-size: 9pt;
+    .copyright span{
+        font-size: 5pt;
     }
 
     /*Connect*/

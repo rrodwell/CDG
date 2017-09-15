@@ -47,10 +47,10 @@ $(document).ready(function() {
         }
     );
 
-    // $('.slider').slider({
-    //     height: '600px',
-    //     indicators: false
-    // });
+    $('.slider').slider({
+        height: '600px',
+        indicators: false
+    });
 
     $('.carousel.carousel-slider').carousel({
         fullWidth: true,
