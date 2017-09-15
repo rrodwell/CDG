@@ -119,6 +119,7 @@ nav ul a.active:hover {
 
 main {
     flex: 1 0 auto;
+    height: 100% !important;
 }
 
 /*Index*/
@@ -176,31 +177,29 @@ main {
 /*Packages*/
 
 .package-body {
-    width: 99%;
+    width: 100%;
+    min-height: 500px !important;
     margin: 40px auto 0 auto;
     background-image: url(../images/brushedSteel.jpg);
     background-size: cover;
-    /*background-color: whitesmoke;*/
     padding-top: 10px;
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
 
 .packages{
-    width: 99%;
+
+    width: 100%;
     margin: auto;
-    background-color: whitesmoke;
+    /*background-image: url(../images/brushedSteel.jpg);*/
+    /*background-size: cover;*/
     padding-bottom: 5px;
 }
 
-/*.card-container-title .col {*/
-    /*padding: 10px 0 0 0;*/
-/*}*/
-
-/*.card-container-title {*/
-    /*margin-bottom: 10px;*/
-/*}*/
-
+.package-section {
+    width: 100%;
+    background-color: whitesmoke;
+}
 
 .container-outer::-webkit-scrollbar {
     width: 0px;  /* remove scrollbar space */
@@ -211,99 +210,63 @@ main {
 .container-outer {
     overflow: hidden;
     width: 100%;
-    background-image: url(../images/brushedSteel.jpg);
-    background-size: cover;
-    height: 500px;
+    height: auto;
+    /*background-image: url(../images/brushedSteel.jpg);*/
+    /*background-size: cover;*/
+    /*background-color: whitesmoke;*/
     padding: 20px 0 10px 0;
-    margin-bottom: 20px;
+    margin: 5px auto;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6), 0 0 5px 0 rgba(0, 0, 0, 0.19);
 }
 
 .container-inner {
     height: 100%;
-    padding-top: 10px;
 }
 
 .packages-carousel {
     overflow: visible;
     margin: 0 auto;
-    width: 60% !important;
+    width: 70% !important;
 }
 
 .packages-carousel img {
     width: 95% !important;
-    margin-left: 20px;
+    margin: 0 auto !important;
 }
 
 
-    /*.test {*/
-    /*background-color: whitesmoke;*/
-    /*width: 100%;*/
-    /*box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6), 0 0 5px 0 rgba(0, 0, 0, 0.19);*/
-/*}*/
+.packages-carousel span {
+    color: blue;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    padding: 24px;
+}
 
-.card-title {
+div.carousel-item {
+    min-height: 100% !important;
+    height: 100% !important;
+    background-color: transparent;
+}
+
+.carousel-item h2 {
+    position: absolute;
+    left: 60px;
+    bottom: 45px;
     text-shadow: 2px 2px 5px black;
+    font-size: 20pt !important;
+    text-transform: uppercase;
 }
 
-.card-image img {
-    height: 350px;
-    width: 350px !important;
+.carousel-controls.mc-control {
+    top: 52%;
+    opacity: 0.9;
 }
 
-.card {
-    background-color: palegoldenrod;
-    width: 350px !important;
-    margin: 0 auto;
+.carousel-fwd.mc-control {
+    right: 59px;
 }
-/*.card-container{*/
-    /*width: 100%;*/
-    /*height: auto;*/
-    /*!*background-color: rgba(245, 245, 245, 0.95);*!*/
-    /*margin-bottom: 3%;*/
-    /*padding: 0 0 10px 0;*/
-/*}*/
-
-/*.card-container-title h1 {*/
-    /*padding-top: 10px;*/
-    /*margin: 10px 0 10px 0;*/
-    /*text-shadow: 1px 1px 2px black;*/
-    /*font-weight: 600;*/
-    /*color: #0056B8;*/
-    /*font-family: 'Roboto', sans-serif;*/
-    /*display: inline-block;*/
-/*}*/
-
-/*.card-container .card-section {*/
-    /*padding: 0;*/
-/*}*/
-
-/*.card-btn {*/
-    /*height: 500px;*/
-    /*width: 50%;*/
-    /*!*background-color: rgba(211, 211, 211, 0.95);*!*/
-    /*background-color: transparent;*/
-    /*padding: 0;*/
-    /*margin: 0;*/
-    /*box-shadow: 0 0 0px 0 rgba(0, 0, 0, 0.6), 0 0 0px 0 rgba(0, 0, 0, 0.19);*/
-/*}*/
-
-/*.card-btn:hover {*/
-    /*background-color: #e0e0e0;*/
-/*}*/
-
-/*.card-btn i {*/
-    /*color: black;*/
-    /*opacity: 0.5;*/
-    /*font-size: xx-large;*/
-    /*padding-top: 232px;*/
-/*}*/
-
-/*.brand-packages {*/
-    /*display: inline-block;*/
-    /*width: 375px;*/
-    /*margin: 15px;*/
-/*}*/
 
 /*Connect*/
 .contact-us {

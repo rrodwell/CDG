@@ -46,7 +46,7 @@ $(document).ready(function() {
 
     // Carousel and Slider
     $('.slider').slider({
-        height: '550px'
+        height: '500px'
     });
 
     $('.carousel.carousel-slider').carousel({
@@ -122,11 +122,11 @@ $(document).ready(function() {
 
     $('.modal').modal();
 
-    $(".card").click(function() {
+    $(".carousel-item").click(function() {
 
         var myClass = $(this).attr("class");
         var split = myClass.split(" ");
-        var classNeeded = split[2];
+        var classNeeded = split[3];
 
         if(classNeeded === "alphabet"){
             imgSrc = packages.mcdonalds.alphabet.imgList;
