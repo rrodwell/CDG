@@ -626,6 +626,7 @@ img.hover-shadow {
         transform: translate(-50%, -50%);
         width: 275px;
         height: auto;
+        margin-top: 12px !important;
     }
 
     /*Carousel*/
@@ -638,12 +639,18 @@ img.hover-shadow {
         font-size: 40pt;
     }
 
+    /*Main*/
+
+    main {
+        height: 300px !important;
+    }
+
     .main-section h4 {
         font-size: 22pt;
     }
 
     .main {
-        padding-top: 25px;
+        padding-top: 15px;
     }
 
     #logo{
@@ -683,6 +690,7 @@ img.hover-shadow {
 
     .company-logo {
         width: 245px;
+        margin-top: 10px !important;
     }
 
     /*Carousel*/
