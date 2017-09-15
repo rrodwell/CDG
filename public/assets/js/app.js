@@ -54,6 +54,7 @@ $(document).ready(function() {
         indicators: true
     });
 
+
     $(".carousel-fwd").on("click",function(){
         $('.carousel').carousel('next');
     });
@@ -61,31 +62,6 @@ $(document).ready(function() {
     $(".carousel-prev").on("click",function(){
         $('.carousel').carousel('prev');
     });
-
-    // // Scroll
-    // $(".mc-forward").click(function() {
-    //     $(".mc-outer").animate({
-    //         scrollLeft:  "+=300"
-    //     }, 1000);
-    // });
-    //
-    // $(".mc-back").on("click" ,function(){
-    //     $(".mc-outer").animate({
-    //         scrollLeft:  "-=300"
-    //     }, 1000);
-    // });
-    //
-    // $(".bk-forward").click(function() {
-    //     $(".bk-outer").animate({
-    //         scrollLeft:  "+=300"
-    //     }, 1000);
-    // });
-    //
-    // $(".bk-back").on("click" ,function(){
-    //     $(".bk-outer").animate({
-    //         scrollLeft:  "-=300"
-    //     }, 1000);
-    // });
 
 
     //Modals functions
