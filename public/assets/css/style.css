@@ -139,10 +139,9 @@ main {
 .carousel-controls i{
     color: #f5f5f5;
     font-size: 55pt;
-    font-weight: 600;
+    font-weight: 300;
     opacity: 0.85;
 }
-
 
 .carousel-fwd {
     right: 5px;
@@ -562,6 +561,7 @@ img.hover-shadow {
 
 /*Media Queries*/
 @media (max-width: 1200px) {
+    /*Nav*/
     nav {
         height: 88px;
     }
@@ -580,7 +580,7 @@ img.hover-shadow {
         margin: 7px 0 5px 5px;
     }
 
-
+    /*Main*/
     .main-section h4 {
         font-size: 27pt;
     }
@@ -593,9 +593,20 @@ img.hover-shadow {
         width: 50%;
     }
 
+    /*Carousel*/
+    .carousel-controls {
+        position: absolute;
+        top: 45%;
+    }
+
+    .carousel-controls i{
+        font-size: 45pt;
+    }
+
 }
 
 @media (max-width: 995px) {
+    /*Nav*/
     nav {
         height: 80px;
     }
@@ -615,6 +626,16 @@ img.hover-shadow {
         transform: translate(-50%, -50%);
         width: 275px;
         height: auto;
+    }
+
+    /*Carousel*/
+    .carousel-controls {
+        position: absolute;
+        top: 40%;
+    }
+
+    .carousel-controls i{
+        font-size: 40pt;
     }
 
     .main-section h4 {
@@ -655,7 +676,7 @@ img.hover-shadow {
 }
 
 @media (max-width: 640px) {
-
+    /*Nav*/
     nav {
         height: 70px;
     }
@@ -664,6 +685,18 @@ img.hover-shadow {
         width: 245px;
     }
 
+    /*Carousel*/
+    .carousel-controls {
+        position: absolute;
+        top: 25%;
+    }
+
+    .carousel-controls i{
+        font-size: 28pt;
+        font-weight: 300;
+    }
+
+    /*Packages*/
     .brand-packages {
         width: 285px;
     }
@@ -776,6 +809,7 @@ img.hover-shadow {
         font-size: 9pt;
     }
 
+    /*Connect*/
     .map, .find-us {
         height: 300px !important;
     }
