@@ -46,7 +46,7 @@ $(document).ready(function() {
 
     // Carousel and Slider
     $('.slider').slider({
-        height: '500px'
+        indicators: false
     });
 
     $('.carousel.carousel-slider').carousel({
