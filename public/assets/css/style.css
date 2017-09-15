@@ -714,8 +714,22 @@ img.hover-shadow {
     }
 
     .carousel-controls i{
-        font-size: 28pt;
-        font-weight: 300;
+         font-size: 28pt;
+         font-weight: 300;
+    }
+
+    .mc-control {
+        top: 40% !important;
+    }
+
+    .carousel-fwd {
+        right: 0 !important;
+    }
+
+    .carousel-item h2 {
+        font-size: 12pt !important;
+        bottom: 10px !important;
+        left: 25px !important;
     }
 
     /*Packages*/
