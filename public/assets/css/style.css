@@ -271,9 +271,13 @@ main {
     top: 45%;
 }
 
+.carousel-controls.package-btn:hover {
+    background-color: rgba(164, 164, 164, 0.3);
+}
+
 .carousel-controls.package-btn i {
     color: black;
-    font-size: 42pt;
+    font-size: 38pt;
     font-weight: 200;
 }
 
@@ -284,7 +288,6 @@ main {
 .package-btn.mc-prev {
     left: 0;
 }
-
 
 /*Connect*/
 .contact-us {
@@ -705,7 +708,7 @@ img.hover-shadow {
     }
 
     .carousel-controls.package-btn i {
-        font-size: 38pt;
+        font-size: 34pt;
     }
 
 }
@@ -758,10 +761,7 @@ img.hover-shadow {
         width: 50%;
     }
 
-    .card-btn i {
-        font-size: x-large;
-    }
-
+    /*Footer*/
     footer h5 {
         font-size: large;
     }
@@ -796,7 +796,7 @@ img.hover-shadow {
     }
 
     .carousel-controls.package-btn i {
-        font-size: 32pt;
+        font-size: 28pt;
     }
 
     /*Connect*/
