@@ -206,7 +206,7 @@ main {
     /*background-color: rgba(211, 211, 211, 0.95);*/
     background-color: #f5f5f5;
     margin: auto;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
+    -ms-overflow-style: none;
 }
 
 .package-outer::-webkit-scrollbar {
