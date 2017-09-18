@@ -210,113 +210,6 @@ footer a {
     font-size: 14pt;
 }
 
-/*Packages-Modal*/
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    left: 0;
-    top: 0 !important;
-    width: 100%;
-    height: 100%;
-    max-height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.75);
-}
-
-.modal-content {
-    position: relative;
-    padding: 10px !important;
-    margin: 15px auto;
-    width: 95%;
-}
-
-.modal-content .row {
-    margin-bottom: 0;
-    padding: 10px 0 10px 0;
-    background-color: rgb(0, 0, 0);
-}
-
-.close {
-    color: white;
-    position: absolute;
-    top:5px;
-    right: 12px;
-    font-size: 1.7rem;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: #b1b1b1;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.mySlides {
-    display: none;
-}
-
-.mySlides img{
-    width: 100%;
-}
-
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 35%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: #f5f5f5;
-    font-weight: bold;
-    font-size: 32px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-}
-
-.next {
-    right: 10px;
-    border-radius: 3px 0 0 3px;
-}
-
-
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.numbertext {
-    color: #f5f5f5;
-    font-size: 16px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 10px;
-}
-
-img.thumbnail {
-    opacity: 0.6;
-    width: 100%;
-    height: auto;
-}
-
-.active,
-.thumbnail:hover {
-    opacity: 1;
-}
-
-img.hover-shadow {
-    transition: 0.3s
-}
-
-.hover-shadow:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
-}
-
 
 /*Media Queries*/
 
@@ -344,18 +237,6 @@ img.hover-shadow {
     .slider .slides {
         height: 100% !important;
     }
-
-    /*Connect*/
-    .connect-outer-container{
-        margin: 30px auto 0 auto;
-    }
-
-    /*Packages*/
-    .card-image img {
-        height: 320px;
-    }
-
-
 }
 
 @media (max-width: 1200px) {
@@ -378,19 +259,6 @@ img.hover-shadow {
         margin: 7px 0 5px 5px;
     }
 
-    /*Main*/
-    .main-section h4 {
-        font-size: 27pt;
-    }
-
-    .main {
-        padding-top: 25px;
-    }
-
-    #logo{
-        width: 50%;
-    }
-
     /*Carousel*/
     .carousel-controls {
         position: absolute;
@@ -399,48 +267,6 @@ img.hover-shadow {
 
     .carousel-controls i{
         font-size: 45pt;
-    }
-
-    /*Connect*/
-    .connect-outer-container{
-        margin: 20px auto 0 auto;
-    }
-
-    .office-address ul li a {
-        font-size: 16pt;
-    }
-
-    .office-address h5 {
-        font-size: 14pt;
-    }
-
-    /*Packages*/
-    .package-body {
-        margin-top: 30px;
-    }
-
-    .brand-packages {
-        width: 320px;
-    }
-
-    .package-outer{
-        width: 92%;
-    }
-
-    .mc-inner{
-        width: calc(355px * 5) !important;
-    }
-
-    .card-image img {
-        height: 320px;
-    }
-
-    .carousel-controls.package-btn {
-        top: 42%;
-    }
-
-    .carousel-controls.package-btn i {
-        font-size: 34pt;
     }
 
 }
@@ -479,20 +305,6 @@ img.hover-shadow {
         font-size: 40pt;
     }
 
-    /*Main*/
-
-    .main-section h4 {
-        font-size: 22pt;
-    }
-
-    .main {
-        padding-top: 15px;
-    }
-
-    #logo{
-        width: 50%;
-    }
-
     /*Footer*/
     footer h5 {
         font-size: large;
@@ -508,40 +320,6 @@ img.hover-shadow {
 
     .copyright span{
         font-size: x-small;
-    }
-
-    /*Packages*/
-    .package-body {
-        margin-top: 25px;
-    }
-
-    .brand-packages {
-        width: 300px;
-    }
-
-    .mc-inner{
-        width: calc(340px * 5) !important;
-    }
-
-    .card-image img {
-        height: 300px;
-    }
-
-    .carousel-controls.package-btn i {
-        font-size: 28pt;
-    }
-
-    /*Connect*/
-    .flex-box {
-        display: flex;
-        flex-direction: column; /* Stack on top */
-    }
-    .flex-a {
-        order: 2; /* Go down, bring Box B up */
-    }
-
-    .flex-b {
-        order: 1;
     }
 
 }
@@ -579,59 +357,6 @@ img.hover-shadow {
         left: 25px !important;
     }
 
-    /*Under Construction*/
-    .brand-logo img {
-        width: 60px !important;
-        height: 85px !important;
-    }
-
-    .section{
-        padding: 15px 5px 5px 5px;
-    }
-    .services-container {
-        width: 100%;
-    }
-    .services-container .col {
-        padding: 7px;
-    }
-
-    /*Modal*/
-    .modal-content {
-        margin: 5px auto;
-        padding: 5px !important;
-        width: 90%;
-        max-width: 1200px;
-    }
-
-    .modal-content .row {
-        padding: 5px 0 5px 0;
-    }
-
-    .close {
-        top: -5px;
-        right: 5px;
-    }
-
-    .close i {
-        font-size: 13pt !important;
-    }
-
-    .prev,
-    .next {
-        top: 45%;
-        width: auto;
-        padding: 16px;
-        font-size: 18px;
-    }
-
-    .next {
-        right: 5px;
-    }
-
-    .numbertext {
-        font-size: 12px;
-    }
-
     /*Footer*/
     .footer-info {
         font-size: small;
@@ -644,47 +369,5 @@ img.hover-shadow {
     .copyright span{
         font-size: 5pt;
     }
-
-    /*Connect*/
-    .contact-us {
-        padding-left: 15px !important;
-    }
-
-    .office-address ul li a {
-        font-size: 15pt;
-    }
-
-    .office-address h5 {
-        font-size: 13pt;
-    }
-
-    /*Packages*/
-    .brand-packages {
-        width: 235px;
-    }
-
-    .package-outer{
-        width: 99%
-    }
-
-    .card-slider {
-        padding-bottom: 15px;
-    }
-
-    .mc-inner{
-        width: calc(270px * 5) !important;
-    }
-
-
-    .card-image img {
-        height: 250px;
-    }
-
-    .carousel-controls.package-btn {
-        top: 88%;
-    }
-
-
-
 
 }
