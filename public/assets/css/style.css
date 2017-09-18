@@ -643,6 +643,14 @@ img.hover-shadow {
         font-size: 45pt;
     }
 
+    /*Connect*/
+    .office-address ul li a {
+        font-size: 16pt;
+    }
+
+    .office-address h5 {
+        font-size: 14pt;
+    }
 }
 
 @media (max-width: 995px) {
@@ -713,9 +721,6 @@ img.hover-shadow {
         font-size: x-small;
     }
 
-    /*.map, .find-us {*/
-        /*height: 300px !important;*/
-    /*}*/
 }
 
 @media (max-width: 640px) {
@@ -868,4 +873,14 @@ img.hover-shadow {
     .contact-us {
         padding-left: 15px !important;
     }
+
+    .office-address ul li a {
+        font-size: 15pt;
+    }
+
+    .office-address h5 {
+        font-size: 13pt;
+    }
+
+
 }
