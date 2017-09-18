@@ -856,6 +856,10 @@ img.hover-shadow {
         font-size: small;
     }
 
+    .footer-info li:last-child {
+        font-size: 9pt;
+    }
+
     .copyright span{
         font-size: 5pt;
     }
