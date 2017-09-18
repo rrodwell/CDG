@@ -150,11 +150,11 @@ $(document).ready(function() {
     });
 
     // Map
-    console.log($(".contact-us").height());
-    $(".find-us").css("height", $(".connect-section").height());
+    $(".map").css("height", $(".connect-section").height());
 
 
 });//Document Ready
+
 
 function runModal (i, source, alt) {
     $(".largeImg-"+i).attr("src", source);
