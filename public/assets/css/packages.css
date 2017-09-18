@@ -1,0 +1,207 @@
+
+/*Packages*/
+.package-body {
+    width: 99%;
+    margin: 60px auto 0 auto;
+    /*background-image: url(../images/brushedSteel.jpg);*/
+    /*background-size: cover;*/
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.packages {
+    margin: auto;
+    width: 99%;
+}
+
+.card-container-title .col {
+    padding: 10px 0 0 0;
+}
+
+.card-container-title {
+    margin-bottom: 0;
+}
+
+.package-outer {
+    overflow: scroll;
+    height: 100%;
+    width: 93%;
+    margin: auto;
+    -ms-overflow-style: none;
+}
+
+.package-outer::-webkit-scrollbar {
+    width: 0; /* remove scrollbar space */
+    background: transparent; /* optional: just make scrollbar invisible */
+}
+
+
+.package-inner {
+    height: 100%;
+}
+
+.package-row {
+    position: relative;
+    width: 100%;
+    padding-top: 10px;
+    /*box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6), 0 0 5px 0 rgba(0, 0, 0, 0.19);*/
+}
+
+.card-title {
+    text-shadow: 2px 2px 5px black;
+}
+
+.card-image img {
+    height: 400px;
+}
+
+.card-content {
+    height: 100%;
+    padding: 0 !important;
+
+}
+
+.card {
+    /*background-color: lightgrey;*/
+    background-image: url(../images/CompanyLogo/brushedSteel.jpg);
+    background-size: cover;
+}
+
+.card-content h5 {
+    margin: 10px !important;
+}
+
+.card-container {
+    width: 99%;
+    height: auto;
+    margin: 10px auto 30px auto;
+}
+
+.card-container .card-section {
+    padding: 0;
+}
+
+
+.brand-packages {
+    display: inline-block;
+    width: 385px;
+    margin: 15px;
+}
+
+.carousel-controls.package-btn {
+    top: 45%;
+}
+
+.carousel-controls.package-btn:hover {
+    background-color: rgba(164, 164, 164, 0.3);
+}
+
+.carousel-controls.package-btn i {
+    color: black;
+    font-size: 38pt;
+    font-weight: 200;
+}
+
+.package-btn.mc-fwd {
+    right: 0;
+}
+
+.package-btn.mc-prev {
+    left: 0;
+}
+
+
+/*Media Queries*/
+
+@media only screen and (max-width: 1026px) {
+    /*Packages*/
+    .card-image img {
+        height: 320px;
+    }
+
+
+}
+
+@media (max-width: 1200px) {
+    /*Packages*/
+    .package-body {
+        margin-top: 30px;
+    }
+
+    .brand-packages {
+        width: 320px;
+    }
+
+    .package-outer{
+        width: 92%;
+    }
+
+    .mc-inner{
+        width: calc(355px * 5) !important;
+    }
+
+    .card-image img {
+        height: 320px;
+    }
+
+    .carousel-controls.package-btn {
+        top: 42%;
+    }
+
+    .carousel-controls.package-btn i {
+        font-size: 34pt;
+    }
+
+}
+
+@media (max-width: 995px) {
+    /*Packages*/
+    .package-body {
+        margin-top: 25px;
+    }
+
+    .brand-packages {
+        width: 300px;
+    }
+
+    .mc-inner{
+        width: calc(340px * 5) !important;
+    }
+
+    .card-image img {
+        height: 300px;
+    }
+
+    .carousel-controls.package-btn i {
+        font-size: 28pt;
+    }
+}
+
+@media (max-width: 768px) {
+    /*Packages*/
+    .brand-packages {
+        width: 235px;
+    }
+
+    .package-outer{
+        width: 99%
+    }
+
+    .card-slider {
+        padding-bottom: 15px;
+    }
+
+    .mc-inner{
+        width: calc(270px * 5) !important;
+    }
+
+
+    .card-image img {
+        height: 250px;
+    }
+
+    .carousel-controls.package-btn {
+        top: 88%;
+    }
+
+}

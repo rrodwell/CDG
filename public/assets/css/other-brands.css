@@ -1,0 +1,9 @@
+.other-brands {
+    min-height: 100%;
+    padding-top: 45px;
+}
+
+.other-brands img {
+    height: 100%;
+    width: 90%;
+}
