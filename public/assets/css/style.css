@@ -381,7 +381,6 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
 .send-email {
     margin: 0 5px 40px 0;
     background-color: #1e7a1e;
-    width: 25%;
     font-weight: 400;
     font-size: large;
 
