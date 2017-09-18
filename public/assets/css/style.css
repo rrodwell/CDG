@@ -135,13 +135,13 @@ main {
 
 .carousel {
     overflow: visible;
-    height: 600px !important;
+    height: 500px !important;
     width: 65%;
     margin: auto;
 }
 
 .carousel img {
-    height: 600px !important;
+    height: 500px !important;
 }
 
 .carousel-controls {
