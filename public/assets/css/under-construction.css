@@ -1,8 +1,11 @@
 /*Under Construction*/
 .main-section {
     width: 100%;
-    background-color: #f5f5f5;
     text-align: center;
+}
+.main-section.container {
+    margin: auto;
+    vertical-align: middle;
 }
 
 .main-section h4 {

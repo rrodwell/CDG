@@ -30,6 +30,10 @@ nav {
 
 }
 
+.nav-ul {
+    padding-right: 15px;
+}
+
 .nav-ul, .nav-ul li i {
     line-height: 120px;
     margin: 0;
@@ -124,13 +128,25 @@ main {
 
 /*Index*/
 .main {
+    position: relative;
     width: 100%;
-    padding: 50px 5px 15px 5px;
+    padding: 50px 5px 0px 5px;
+}
+
+.carousel {
+    overflow: visible;
+    height: 600px !important;
+    width: 65%;
+    margin: auto;
+}
+
+.carousel img {
+    height: 600px !important;
 }
 
 .carousel-controls {
     position: absolute;
-    top: 55%;
+    top: 50%;
 }
 
 .carousel-controls:hover {
@@ -159,7 +175,6 @@ main {
     background-image: url(../images/CompanyLogo/brushedSteel.jpg);
     background-size: cover;
     padding-top: 0;
-    margin-top: 2%  ;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6), 0 0 5px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -196,7 +211,7 @@ footer a {
 }
 
 .footer-address {
-    padding-top: 3% !important;
+    padding-top: 10px !important;
 }
 
 .footer-info {
