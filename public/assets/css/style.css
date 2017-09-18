@@ -276,7 +276,6 @@ div.carousel-item {
 }
 
 .connect-outer-container{
-    /*background-color: whitesmoke;*/
     background-image: url(../images/brushedSteel.jpg);
     background-size: cover;
     width: 100%;
@@ -311,7 +310,6 @@ div.carousel-item {
 .office-address h4 {
     font-weight: 600;
     color: black;
-    /*text-shadow: 2px 2px 5px black;*/
 
 }
 
@@ -319,7 +317,6 @@ div.carousel-item {
     font-size: 18pt;
     font-weight: bold;
     color: #242424;
-    /*text-shadow: 2px 2px 5px black;*/
 
 }
 
@@ -333,7 +330,6 @@ div.carousel-item {
 .map {
     background-image: url(../images/brushedSteel.jpg);
     background-size: cover;
-    /*background-color: #b0b0b0;*/
     height: auto !important;
     padding-bottom: 15px !important;
 }
@@ -569,7 +565,6 @@ img.hover-shadow {
 }
 
 
-
 /*Media Queries*/
 
 @media only screen and (max-width: 1026px) {
@@ -595,6 +590,11 @@ img.hover-shadow {
 
     .slider .slides {
         height: 100% !important;
+    }
+
+    /*Connect*/
+    .connect-outer-container{
+        margin: 30px auto 0 auto;
     }
 
 
@@ -644,6 +644,10 @@ img.hover-shadow {
     }
 
     /*Connect*/
+    .connect-outer-container{
+        margin: 20px auto 0 auto;
+    }
+
     .office-address ul li a {
         font-size: 16pt;
     }
