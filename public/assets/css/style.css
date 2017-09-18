@@ -204,7 +204,7 @@ main {
     height: 100%;
     width: 93%;
     /*background-color: rgba(211, 211, 211, 0.95);*/
-    background-color: #f5f5f5;
+    background-color: #d3d3d3;
     margin: auto;
     -ms-overflow-style: none;
 }
@@ -221,7 +221,7 @@ main {
 
 .package-row {
     position: relative;
-    background-color: #f5f5f5;
+    background-color: #d3d3d3;
     width: 100%;
     padding-top: 10px;
     /*box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6), 0 0 5px 0 rgba(0, 0, 0, 0.19);*/
@@ -242,9 +242,9 @@ main {
 }
 
 .card {
-    /*background-color: white;*/
-    background-image: url(../images/brushedSteel.jpg);
-    background-size: cover;
+    background-color: white;
+    /*background-image: url(../images/brushedSteel.jpg);*/
+    /*background-size: cover;*/
 }
 
 .card-content h5 {
@@ -346,8 +346,9 @@ main {
 }
 
 .map {
-    background-image: url(../images/brushedSteel.jpg);
-    background-size: cover;
+    /*background-image: url(../images/brushedSteel.jpg);*/
+    /*background-size: cover;*/
+    background-color: #d3d3d3;
     height: auto !important;
     padding-bottom: 15px !important;
 }
