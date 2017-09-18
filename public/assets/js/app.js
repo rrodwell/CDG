@@ -9,11 +9,11 @@ $(document).ready(function() {
     // });
 
 
-    // var mc_width = 410 * $(".mc-packages").length;
-    // $(".mc-inner").css("width", mc_width);
-    //
-    // var bk_width = 410 * $(".bk-packages").length;
-    // $(".bk-inner").css("width", bk_width);
+    var mc_width = 419 * $(".mc-packages").length;
+    $(".mc-inner").css("width", mc_width);
+
+    var bk_width = 410 * $(".bk-packages").length;
+    $(".bk-inner").css("width", bk_width);
 
     $('select').material_select();
 
@@ -55,12 +55,16 @@ $(document).ready(function() {
     });
 
 
-    $(".carousel-fwd").on("click",function(){
-        $('.carousel').carousel('next');
+    $(".mc-fwd").on("click",function(){
+        $(".mc-outer").animate({
+            scrollLeft:  "+=300"
+        }, 1000);
     });
 
-    $(".carousel-prev").on("click",function(){
-        $('.carousel').carousel('prev');
+    $(".mc-prev").on("click",function(){
+        $(".mc-outer").animate({
+            scrollLeft:  "-=300"
+        },1000);
     });
 
 
@@ -98,11 +102,11 @@ $(document).ready(function() {
 
     $('.modal').modal();
 
-    $(".carousel-item").click(function() {
+    $(".card").click(function() {
 
         var myClass = $(this).attr("class");
         var split = myClass.split(" ");
-        var classNeeded = split[3];
+        var classNeeded = split[2];
 
         if(classNeeded === "alphabet"){
             imgSrc = packages.mcdonalds.alphabet.imgList;
@@ -200,5 +204,4 @@ function showSlides(n) {
     }
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
-    // captionText.innerHTML = dots[slideIndex-1].alt;
 }

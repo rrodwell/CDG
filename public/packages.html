@@ -11,6 +11,15 @@
 
         <link rel="shortcut icon" href="./assets/images/icon.png">
 
+        <!--Google /Packages->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans"
+              rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+              rel="stylesheet" type="text/css">
+
         <!--Materialize.css-->
         <link type="text/css" rel="stylesheet"
               href="./assets/css/materialize.min.css" media="screen,projection"/>
@@ -20,6 +29,7 @@
 
         <!--Stylesheet-->
         <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/packages-style.css">
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -106,95 +116,98 @@
             <div class="package-body">
                 <div class="packages">
 
-                    <div class="row card-container-title first-title">
-                        <div class="col s1 m2">
+                    <!--Card slider-->
+                    <div class="card-container2" id="mcdonalds">
+                        <div class="row card-container-title center">
+                            <!--<div class="col s1 m2">-->
+                            <!--</div>-->
+                            <!--<div class="col s10 m8 center">-->
+                                <!--<img src="./assets/images/McDlogo.jpg" width="110px" height="100px">-->
+                            <!--</div>-->
+                            <!--<div class="col s1 m2 brand-logo">-->
+                            <!--</div>-->
+                            <h3>McDonald's Packages</h3>
                         </div>
-                        <div class="col s10 m8 center" id="mcdonalds">
-                            <img src="./assets/images/McDlogo.jpg" width="110px" height="100px">
-                        </div>
-                        <div class="col s1 m2 brand-logo">
-                        </div>
-                    </div>
+                        <div class="row package-row">
+                            <!--<div class="col s6 m1 l1 card-section">-->
+                                <!--<a class="btn card-btn mc-back"><i-->
+                                        <!--class="material-icons">chevron_left</i></a>-->
+                            <!--</div>-->
+                            <div class="col s12 card-section">
+                                <div class="card-slider">
+                                    <div class="package-outer mc-outer">
+                                        <div class="package-inner mc-inner">
+                                            <div class="brand-packages mc-packages">
+                                                <div class="card hoverable alphabet">
+                                                    <div class="card-image"
+                                                         id="mc-package1">
+                                                        <img src="./assets/images/ALPHABET2017.jpg">
+                                                    </div>
+                                                    <div class="card-content center">
+                                                        <h5>ALPHABET</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="brand-packages mc-packages">
+                                                <div class="card hoverable remixA"
+                                                     id="mc-package2">
+                                                    <div class="card-image">
+                                                        <img src="./assets/images/REMIXA2017.jpg">
+                                                    </div>
+                                                    <div class="card-content center">
+                                                        <h5>REMIX A</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="brand-packages mc-packages">
+                                                <div class="card hoverable remixB"
+                                                     id="mc-package3">
+                                                    <div class="card-image">
+                                                        <img src="./assets/images/REMIXB2017.jpg">
+                                                    </div>
+                                                    <div class="card-content center">
+                                                        <h5>REMIX B</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="brand-packages mc-packages">
+                                                <div class="card hoverable remixC"
+                                                     id="mc-package4">
+                                                    <div class="card-image">
+                                                        <img src="./assets/images/REMIXC2017.jpg">
+                                                    </div>
+                                                    <div class="card-content center">
+                                                        <h5>REMIX C</h5>
+                                                    </div>                                                                 </div>
+                                            </div>
+                                            <div class="brand-packages mc-packages">
+                                                <div class="card hoverable simplyModern"
+                                                     id="mc-package5">
+                                                    <div class="card-image">
+                                                        <img src="./assets/images/SM2017.jpg">
+                                                    </div>
+                                                    <div class="card-content center">
+                                                        <h5>SIMPLY MODERN</h5>
+                                                    </div>
+                                                </div>
+                                            </div> <!--brand-packages-->
+                                        </div><!--container-inner-->
+                                    </div><!--container-outer-->
 
-                    <div class="package-section">
+                                    <!-- Left and right controls -->
+                                    <a class="left carousel-controls package-btn mc-prev"><i class="material-icons">chevron_left</i></a>
+                                    <a class="right carousel-controls package-btn mc-fwd"><i class="material-icons">chevron_right</i></a>
 
-                        <div class="container-outer">
-                            <div class="container-inner">
-                                <div class="carousel carousel-slider packages-carousel">
-                                    <div class="carousel-item white-text center alphabet" id="alphabet">
-                                        <h2>Alphabet</h2>
-                                        <a><img class="hoverable" src="./assets/images/ALPHABET2017.jpg"></a>
-                                    </div>
+                                </div><!--card-slider-->
+                            </div><!--col s10 card-section-->
+                            <!--<div class="col s6 m1 l1 card-section">-->
+                                <!--<a class="btn card-btn mc-forward right"><i-->
+                                        <!--class="material-icons">chevron_right</i></a>-->
+                            <!--</div>-->
+                        </div><!--row-->
+                    </div><!--card-container-->
 
-                                    <div class="carousel-item white-text center remixA" id="remixA">
-                                        <h2>Remix A</h2>
-                                        <a><img class="hoverable" src="./assets/images/REMIXA2017.jpg"></a>
-                                    </div>
 
-                                    <div class="carousel-item white-text center remixB" id="remixB">
-                                        <h2>Remix B</h2>
-                                        <a><img class="hoverable" src="./assets/images/REMIXB2017.jpg"></a>
-                                    </div>
-                                    <div class="carousel-item white-text center remixC" id="remixC">
-                                        <h2>Remix C</h2>
-                                        <a><img class="hoverable" src="./assets/images/REMIXC2017.jpg"></a>
-                                    </div>
-                                    <div class="carousel-item white-text center simplyModern" id="simplyModern">
-                                        <h2>Simply Modern</h2>
-                                        <a><img  class="hoverable" src="./assets/images/SM2017.jpg"></a>
-                                    </div>
-                                </div>
-                                <!-- Left and right controls -->
-                                <a class="left carousel-controls carousel-prev mc-control"><i class="material-icons">chevron_left</i></a>
-                                <a class="right carousel-controls carousel-fwd mc-control"><i class="material-icons">chevron_right</i></a>
-                            </div>
-                        </div>
-                    </div><!-- package-section-->
-
-                    <div class="row card-container-title first-title">
-                        <div class="col s1 m2">
-                        </div>
-                        <div class="col s10 m8 center" id="burgerking">
-                            <img src="./assets/images/BKlogo.png" width="110px" height="100px">
-                        </div>
-                        <div class="col s1 m2 brand-logo">
-                        </div>
-                    </div>
-
-                    <div class="package-section">
-
-                        <div class="container-outer">
-                            <div class="container-inner">
-                                <div class="carousel carousel-slider packages-carousel">
-                                    <div class="carousel-item white-text center alphabet">
-                                        <h2>Alphabet</h2>
-                                        <a><img class="hoverable" src="./assets/images/ALPHABET2017.jpg"></a>
-                                    </div>
-
-                                    <div class="carousel-item white-text center remixA">
-                                        <h2>Remix A</h2>
-                                        <a><img class="hoverable" src="./assets/images/REMIXA2017.jpg"></a>
-                                    </div>
-
-                                    <div class="carousel-item white-text center remixB">
-                                        <h2>Remix B</h2>
-                                        <a><img class="hoverable" src="./assets/images/REMIXB2017.jpg"></a>
-                                    </div>
-                                    <div class="carousel-item white-text center remixC">
-                                        <h2>Remix C</h2>
-                                        <a><img class="hoverable" src="./assets/images/REMIXC2017.jpg"></a>
-                                    </div>
-                                    <div class="carousel-item white-text center simplyModern" id="BKsimplyModern">
-                                        <h2>Simply Modern</h2>
-                                        <a><img  class="hoverable" src="./assets/images/SM2017.jpg"></a>
-                                    </div>
-                                </div>
-                                <!-- Left and right controls -->
-                                <a class="left carousel-controls carousel-prev mc-control"><i class="material-icons">chevron_left</i></a>
-                                <a class="right carousel-controls carousel-fwd mc-control"><i class="material-icons">chevron_right</i></a>
-                            </div>
-                        </div>
-                    </div><!-- package-section-->
 
 
                 </div><!--packages-->

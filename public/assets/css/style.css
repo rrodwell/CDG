@@ -176,97 +176,97 @@ main {
 
 /*Packages*/
 
-.package-body {
-    width: 100%;
-    min-height: 500px !important;
-    margin: 40px auto 0 auto;
-    background-image: url(../images/brushedSteel.jpg);
-    background-size: cover;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-}
-
-.packages{
-
-    width: 100%;
-    margin: auto;
+/*.package-body {*/
+    /*width: 98%;*/
+    /*min-height: 500px !important;*/
+    /*margin: 40px auto 0 auto;*/
     /*background-image: url(../images/brushedSteel.jpg);*/
     /*background-size: cover;*/
-    padding-bottom: 5px;
-}
+    /*padding-top: 10px;*/
+    /*padding-bottom: 5px;*/
+    /*margin-bottom: 10px;*/
+/*}*/
 
-.package-section {
-    width: 100%;
-    background-color: whitesmoke;
-}
+/*.packages{*/
 
-.container-outer::-webkit-scrollbar {
-    width: 0px;  /* remove scrollbar space */
-    background: transparent;  /* optional: just make scrollbar invisible */
-}
+    /*width: 100%;*/
+    /*margin: auto;*/
+    /*!*background-image: url(../images/brushedSteel.jpg);*!*/
+    /*!*background-size: cover;*!*/
+    /*padding-bottom: 5px;*/
+/*}*/
 
-
-.container-outer {
-    overflow: hidden;
-    width: 100%;
-    height: auto;
-    /*background-image: url(../images/brushedSteel.jpg);*/
-    /*background-size: cover;*/
+/*.package-section {*/
+    /*width: 100%;*/
     /*background-color: whitesmoke;*/
-    padding: 20px 0 10px 0;
-    margin: 5px auto;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6), 0 0 5px 0 rgba(0, 0, 0, 0.19);
-}
+/*}*/
 
-.container-inner {
-    height: 100%;
-}
-
-.packages-carousel {
-    overflow: visible;
-    margin: 0 auto;
-    width: 70% !important;
-}
-
-.packages-carousel img {
-    width: 95% !important;
-    margin: 0 auto !important;
-}
+/*.container-outer::-webkit-scrollbar {*/
+    /*width: 0px;  !* remove scrollbar space *!*/
+    /*background: transparent;  !* optional: just make scrollbar invisible *!*/
+/*}*/
 
 
-.packages-carousel span {
-    color: blue;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    max-width: 100%;
-    padding: 24px;
-}
+/*.container-outer {*/
+    /*overflow: hidden;*/
+    /*width: 100%;*/
+    /*height: auto;*/
+    /*!*background-image: url(../images/brushedSteel.jpg);*!*/
+    /*!*background-size: cover;*!*/
+    /*!*background-color: whitesmoke;*!*/
+    /*padding: 20px 0 10px 0;*/
+    /*margin: 5px auto;*/
+    /*box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6), 0 0 5px 0 rgba(0, 0, 0, 0.19);*/
+/*}*/
 
-div.carousel-item {
-    min-height: 100% !important;
-    height: 100% !important;
-    background-color: transparent;
-}
+/*.container-inner {*/
+    /*height: 100%;*/
+/*}*/
 
-.carousel-item h2 {
-    position: absolute;
-    left: 60px;
-    bottom: 45px;
-    text-shadow: 2px 2px 5px black;
-    font-size: 20pt !important;
-    text-transform: uppercase;
-}
+/*.packages-carousel {*/
+    /*overflow: visible;*/
+    /*margin: 0 auto;*/
+    /*width: 70% !important;*/
+/*}*/
 
-.carousel-controls.mc-control {
-    top: 52%;
-    opacity: 0.9;
-}
+/*.packages-carousel img {*/
+    /*width: 95% !important;*/
+    /*margin: 0 auto !important;*/
+/*}*/
 
-.carousel-fwd.mc-control {
-    right: 59px;
-}
+
+/*.packages-carousel span {*/
+    /*color: blue;*/
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*max-width: 100%;*/
+    /*padding: 24px;*/
+/*}*/
+
+/*div.carousel-item {*/
+    /*min-height: 100% !important;*/
+    /*height: 100% !important;*/
+    /*background-color: transparent;*/
+/*}*/
+
+/*.carousel-item h2 {*/
+    /*position: absolute;*/
+    /*left: 60px;*/
+    /*bottom: 45px;*/
+    /*text-shadow: 2px 2px 5px black;*/
+    /*font-size: 20pt !important;*/
+    /*text-transform: uppercase;*/
+/*}*/
+
+/*.carousel-controls.mc-control {*/
+    /*top: 52%;*/
+    /*opacity: 0.9;*/
+/*}*/
+
+/*.carousel-fwd.mc-control {*/
+    /*right: 59px;*/
+/*}*/
 
 
 /*Connect*/
@@ -406,7 +406,7 @@ form .row {
     background-image: url(../images/brushedSteel.jpg);
     background-size: cover;
     padding-top: 0;
-    margin-top: 2%  ;
+    margin-top: 1%  ;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6), 0 0 5px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -423,7 +423,7 @@ form .row {
 .copyright span {
     float: right;
     color: #313131;;
-    font-size: 8pt;
+    font-size: 9pt;
 }
 
 footer h5 {
@@ -791,26 +791,6 @@ img.hover-shadow {
     .brand-logo img {
         width: 60px !important;
         height: 85px !important;
-    }
-
-    #flex {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #flex-a {
-        order: 2;
-        margin: 0;
-    }
-
-    #flex-b {
-        order: 1;
-        margin: 0 auto;
-    }
-
-    #flex-c {
-        order: 3;
-        margin: 0;
     }
 
     .section{
