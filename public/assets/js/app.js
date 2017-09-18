@@ -54,17 +54,28 @@ $(document).ready(function() {
         indicators: true
     });
 
+    $(".carousel-fwd").on("click",function(){
+        $('.carousel').carousel('next');
+    });
 
+    $(".carousel-prev").on("click",function(){
+        $('.carousel').carousel('prev');
+    });
+
+
+    // Package Buttons
     $(".mc-fwd").on("click",function(){
         $(".mc-outer").animate({
-            scrollLeft:  "+=300"
+            scrollLeft:  "+=400",
+            behavior: "smooth"
         }, 1000);
     });
 
     $(".mc-prev").on("click",function(){
         $(".mc-outer").animate({
-            scrollLeft:  "-=300"
-        },1000);
+            scrollLeft:  "-=400",
+            behavior: "smooth"
+        }, 1000);
     });
 
 

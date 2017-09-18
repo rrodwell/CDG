@@ -256,40 +256,10 @@ main {
     margin: 10px auto 30px auto;
 }
 
-.card-container-title h1 {
-    padding-top: 10px;
-    margin: 10px 0 10px 0;
-    text-shadow: 1px 1px 2px black;
-    font-weight: 600;
-    color: #0056B8;
-    font-family: 'Roboto', sans-serif;
-    display: inline-block;
-}
-
 .card-container .card-section {
     padding: 0;
 }
 
-.card-btn {
-    height: 500px;
-    width: 50%;
-    /*background-color: rgba(211, 211, 211, 0.95);*/
-    background-color: transparent;
-    padding: 0;
-    margin: 0;
-    /*box-shadow: 0 0 0px 0 rgba(0, 0, 0, 0.6), 0 0 0px 0 rgba(0, 0, 0, 0.19);*/
-}
-
-.card-btn:hover {
-    background-color: #e0e0e0;
-}
-
-.card-btn i {
-    color: black;
-    opacity: 0.5;
-    font-size: xx-large;
-    padding-top: 232px;
-}
 
 .brand-packages {
     display: inline-block;
@@ -302,7 +272,6 @@ main {
 }
 
 .carousel-controls.package-btn i {
-    opacity: 1;
     color: black;
     font-size: 42pt;
     font-weight: 200;
@@ -645,6 +614,11 @@ img.hover-shadow {
         margin: 30px auto 0 auto;
     }
 
+    /*Packages*/
+    .card-image img {
+        height: 320px;
+    }
+
 
 }
 
@@ -703,6 +677,29 @@ img.hover-shadow {
     .office-address h5 {
         font-size: 14pt;
     }
+
+
+    /*Packages*/
+    .brand-packages {
+        width: 320px;
+    }
+
+    .mc-inner{
+        width: calc(355px * 5) !important;
+    }
+
+    .card-image img {
+        height: 320px;
+    }
+
+    .carousel-controls.package-btn {
+        top: 42%;
+    }
+
+    .carousel-controls.package-btn i {
+        font-size: 38pt;
+    }
+
 }
 
 @media (max-width: 995px) {
@@ -773,6 +770,23 @@ img.hover-shadow {
         font-size: x-small;
     }
 
+    /*Packages*/
+    .brand-packages {
+        width: 300px;
+    }
+
+    .mc-inner{
+        width: calc(340px * 5) !important;
+    }
+
+    .card-image img {
+        height: 300px;
+    }
+
+    .carousel-controls.package-btn i {
+        font-size: 32pt;
+    }
+
 }
 
 @media (max-width: 640px) {
@@ -808,34 +822,7 @@ img.hover-shadow {
         left: 25px !important;
     }
 
-    /*Packages*/
-    .brand-packages {
-        width: 285px;
-    }
-
-    .mc-inner{
-        width: calc(320px * 5) !important;
-    }
-
-    .bk-inner{
-        width: calc(320px * 6) !important;
-    }
-
-    .card-btn i {
-        font-size: x-large;
-        padding: 0;
-        vertical-align: middle;
-    }
-
-    .card-btn {
-        height: 50px;
-        width: 100%;
-    }
-
-    .card-container-title h1 {
-        font-size: 30pt;
-    }
-
+    /*Under Construction*/
     .brand-logo img {
         width: 60px !important;
         height: 85px !important;
@@ -913,6 +900,30 @@ img.hover-shadow {
     .office-address h5 {
         font-size: 13pt;
     }
+
+    /*Packages*/
+    .brand-packages {
+        width: 235px;
+    }
+
+    .package-outer{
+        width: 99%;
+    }
+
+    .mc-inner{
+        width: calc(270px * 5) !important;
+    }
+
+
+    .card-image img {
+        height: 250px;
+    }
+
+    .carousel-controls.package-btn {
+        top: 88%;
+    }
+
+
 
 
 }
