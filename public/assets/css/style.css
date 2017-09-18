@@ -684,6 +684,10 @@ img.hover-shadow {
         width: 320px;
     }
 
+    .package-outer{
+        width: 92%;
+    }
+
     .mc-inner{
         width: calc(355px * 5) !important;
     }
@@ -789,7 +793,7 @@ img.hover-shadow {
 
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
     /*Nav*/
     nav {
         height: 70px;
@@ -907,7 +911,11 @@ img.hover-shadow {
     }
 
     .package-outer{
-        width: 99%;
+        width: 99%
+    }
+
+    .card-slider {
+        padding-bottom: 15px;
     }
 
     .mc-inner{
