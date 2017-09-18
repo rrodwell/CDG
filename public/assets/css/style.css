@@ -175,98 +175,146 @@ main {
 }
 
 /*Packages*/
-
-/*.package-body {*/
-    /*width: 98%;*/
-    /*min-height: 500px !important;*/
-    /*margin: 40px auto 0 auto;*/
-    /*background-image: url(../images/brushedSteel.jpg);*/
-    /*background-size: cover;*/
-    /*padding-top: 10px;*/
-    /*padding-bottom: 5px;*/
-    /*margin-bottom: 10px;*/
-/*}*/
-
-/*.packages{*/
-
-    /*width: 100%;*/
-    /*margin: auto;*/
-    /*!*background-image: url(../images/brushedSteel.jpg);*!*/
-    /*!*background-size: cover;*!*/
-    /*padding-bottom: 5px;*/
-/*}*/
-
-/*.package-section {*/
-    /*width: 100%;*/
+.package-body {
+    width: 99%;
+    margin: 60px auto 0 auto;
+    background-image: url(../images/brushedSteel.jpg);
+    background-size: cover;
     /*background-color: whitesmoke;*/
-/*}*/
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
 
-/*.container-outer::-webkit-scrollbar {*/
-    /*width: 0px;  !* remove scrollbar space *!*/
-    /*background: transparent;  !* optional: just make scrollbar invisible *!*/
-/*}*/
+.packages {
+    margin: auto;
+    width: 99%;
+    /*background-color: whitesmoke;*/
+}
 
+.card-container-title .col {
+    padding: 10px 0 0 0;
+}
 
-/*.container-outer {*/
-    /*overflow: hidden;*/
-    /*width: 100%;*/
-    /*height: auto;*/
-    /*!*background-image: url(../images/brushedSteel.jpg);*!*/
-    /*!*background-size: cover;*!*/
-    /*!*background-color: whitesmoke;*!*/
-    /*padding: 20px 0 10px 0;*/
-    /*margin: 5px auto;*/
+.card-container-title {
+    margin-bottom: 0;
+}
+
+.package-outer {
+    overflow: scroll;
+    height: 100%;
+    width: 93%;
+    /*background-color: rgba(211, 211, 211, 0.95);*/
+    background-color: #f5f5f5;
+    margin: auto;
+
+}
+
+.package-outer::-webkit-scrollbar {
+    width: 0px; /* remove scrollbar space */
+    background: transparent; /* optional: just make scrollbar invisible */
+}
+
+.package-inner {
+    height: 100%;
+}
+
+.package-row {
+    position: relative;
+    background-color: #f5f5f5;
+    width: 100%;
+    padding-top: 10px;
     /*box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6), 0 0 5px 0 rgba(0, 0, 0, 0.19);*/
-/*}*/
+}
 
-/*.container-inner {*/
-    /*height: 100%;*/
-/*}*/
+.card-title {
+    text-shadow: 2px 2px 5px black;
+}
 
-/*.packages-carousel {*/
-    /*overflow: visible;*/
-    /*margin: 0 auto;*/
-    /*width: 70% !important;*/
-/*}*/
+.card-image img {
+    height: 400px;
+}
 
-/*.packages-carousel img {*/
-    /*width: 95% !important;*/
-    /*margin: 0 auto !important;*/
-/*}*/
+.card-content {
+    height: 100%;
+    padding: 0 !important;
 
+}
 
-/*.packages-carousel span {*/
-    /*color: blue;*/
-    /*position: absolute;*/
-    /*bottom: 0;*/
-    /*left: 0;*/
-    /*max-width: 100%;*/
-    /*padding: 24px;*/
-/*}*/
+.card {
+    /*background-color: white;*/
+    background-image: url(../images/brushedSteel.jpg);
+    background-size: cover;
+}
 
-/*div.carousel-item {*/
-    /*min-height: 100% !important;*/
-    /*height: 100% !important;*/
-    /*background-color: transparent;*/
-/*}*/
+.card-content h5 {
+    margin: 10px !important;
+}
 
-/*.carousel-item h2 {*/
-    /*position: absolute;*/
-    /*left: 60px;*/
-    /*bottom: 45px;*/
-    /*text-shadow: 2px 2px 5px black;*/
-    /*font-size: 20pt !important;*/
-    /*text-transform: uppercase;*/
-/*}*/
+.card-container {
+    width: 99%;
+    height: auto;
+    margin: 10px auto 30px auto;
+}
 
-/*.carousel-controls.mc-control {*/
-    /*top: 52%;*/
-    /*opacity: 0.9;*/
-/*}*/
+.card-container-title h1 {
+    padding-top: 10px;
+    margin: 10px 0 10px 0;
+    text-shadow: 1px 1px 2px black;
+    font-weight: 600;
+    color: #0056B8;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+}
 
-/*.carousel-fwd.mc-control {*/
-    /*right: 59px;*/
-/*}*/
+.card-container .card-section {
+    padding: 0;
+}
+
+.card-btn {
+    height: 500px;
+    width: 50%;
+    /*background-color: rgba(211, 211, 211, 0.95);*/
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    /*box-shadow: 0 0 0px 0 rgba(0, 0, 0, 0.6), 0 0 0px 0 rgba(0, 0, 0, 0.19);*/
+}
+
+.card-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.card-btn i {
+    color: black;
+    opacity: 0.5;
+    font-size: xx-large;
+    padding-top: 232px;
+}
+
+.brand-packages {
+    display: inline-block;
+    width: 385px;
+    margin: 15px;
+}
+
+.carousel-controls.package-btn {
+    top: 45%;
+}
+
+.carousel-controls.package-btn i {
+    opacity: 1;
+    color: black;
+    font-size: 42pt;
+    font-weight: 200;
+}
+
+.package-btn.mc-fwd {
+    right: 0;
+}
+
+.package-btn.mc-prev {
+    left: 0;
+}
 
 
 /*Connect*/
@@ -406,7 +454,7 @@ form .row {
     background-image: url(../images/brushedSteel.jpg);
     background-size: cover;
     padding-top: 0;
-    margin-top: 1%  ;
+    margin-top: 2%  ;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6), 0 0 5px 0 rgba(0, 0, 0, 0.19);
 }
 
