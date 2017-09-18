@@ -9,7 +9,7 @@
 
         <title>Payments | Casablanca Design Group</title>
 
-        <link rel="shortcut icon" href="./assets/images/icon.png">
+        <link rel="shortcut icon" href="./assets/images/CompanyLogo/icon.png">
 
         <!--Materialize.css-->
         <link type="text/css" rel="stylesheet"
@@ -30,59 +30,110 @@
     </head>
     <body>
 
+        <!-- Dropdown -->
+        <ul id="dropdown1" class="dropdown-content nested">
+            <li class="dropdown">
+                <a class="dropdown-button-nested" data-activates="dropdown2" href="packages.html">McDonald's<i class="material-icons right">arrow_drop_down</i></a>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-button-nested" data-activates="dropdown3" href="packages.html">Burger King<i class="material-icons right">arrow_drop_down</i></a>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-button-nested" data-activates="dropdown4" href="packages.html">Popeyes<i class="material-icons right">arrow_drop_down</i></a>
+            </li>
+            <li>
+                <a href="otherBrands.html">Other Brands</a>
+            </li>
+        </ul>
+
+        <!-- Dropdown MC -->
+        <ul id="dropdown2" class="dropdown-content">
+            <li class="brand-nav"><a href="packages.html#mcdonalds" class="brand-nav">Packages</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="packages.html#alphabet">Alphabet</a>
+            </li>
+            <li>
+                <a href="packages.html#remixA">Remix A</a>
+            </li>
+            <li>
+                <a href="packages.html#remixB">Remix B</a>
+            </li>
+            <li>
+                <a href="packages.html#remixC">Remix C</a>
+            </li>
+            <li>
+                <a href="packages.html#simplyModern">Simply Modern 2017</a>
+            </li>
+            <li>
+                <a href="packages.html#simplyModern">Wood & Stone</a>
+            </li>
+            <li>
+                <a href="packages.html#simplyModern">Craft 2017</a>
+            </li>
+            <li>
+                <a href="packages.html#simplyModern">Living Room Style</a>
+            </li>
+            <li>
+                <a href="packages.html#simplyModern">Living Room Classic</a>
+            </li>
+        </ul>
+
+        <!-- Dropdown BK -->
+        <ul id="dropdown3" class="dropdown-content">
+            <li class="brand-nav"><a href="packages.html#burgerking" class="brand-nav">Packages</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="packages.html#BKalphabet">Garden Grill</a>
+            </li>
+            <li>
+                <a href="packages.html#BKsimplyModern">Prime</a>
+            </li>
+            <li>
+                <a href="packages.html#simplyModern">Improved</a>
+            </li>
+            <li>
+                <a href="packages.html#simplyModern">Enhanced</a>
+            </li>
+        </ul>
+
+        <!-- Dropdown Popeys -->
+        <ul id="dropdown4" class="dropdown-content">
+            <li class="brand-nav"><a href="#" class="brand-nav">Packages</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#">Alphabet</a>
+            </li>
+        </ul>
+
+
         <div class="navbar-fixed">
-            <nav>
+            <nav id="navbar">
                 <div class="nav-wrapper">
-                    <a href="/" class="company-logo"><img class=" company-logo"
-                            src="assets/images/CDGlogo.png"></a>
-                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i
-                            class=" material-icons">menu</i></a>
+                    <a href="/" class="company-logo"><img class=" company-logo" src="assets/images/CompanyLogo/CDGlogo.png"></a>
+                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class=" material-icons">menu</i></a>
 
                     <ul class="right hide-on-med-and-down nav-ul">
 
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/About">About</a></li>
-
-                        <li class="dropdown">
-                            <a class="dropdown-button" data-activates="dropdown1"
-                                    href="/Packages">Brands<i
-                                    class="material-icons right">arrow_drop_down</i></a>
-                            <!-- Dropdown -->
-                            <ul id="dropdown1" class="dropdown-content">
-                                <li><a href="/Brands">McDonald's</a></li>
-                                <li><a href="/Brands">Burger King</a></li>
-                                <li><a href="/Brands">Popeyes</a></li>
-                            </ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
                         </li>
 
                         <li class="dropdown">
-                            <a class="dropdown-button" data-activates="dropdown2"
-                                    href="/Packages">Packages<i
-                                    class="material-icons right">arrow_drop_down</i></a>
-                            <!-- Dropdown -->
-                            <ul id="dropdown2" class="dropdown-content">
-                                <li class="brand-nav"><a href="/Packages#mcdonalds"
-                                        class="brand-nav">McDonald's</a>
-                                </li>
-                                <li class="divider"></li>
-                                <li><a href="/Packages#mc-package1">Alphabet</a></li>
-                                <li><a href="/Packages#mc-package2">Remix A</a></li>
-                                <li><a href="/Packages#mc-package3">Remix B</a></li>
-                                <li><a href="/Packages#mc-package4">Remix C</a></li>
-                                <li><a href="/Packages#mc-package5">Simply Modern</a>
-                                </li>
-                                <li class="divider"></li>
-                                <li class="brand-nav"><a href="/Packages#burgerking"
-                                        class="brand-nav">Burger
-                                    King</a></li>
-                                <li class="divider"></li>
-                                <li><a href="/Packages#bk-package6">Burger King 1</a>
-                                </li>
-                            </ul>
+                            <a class="dropdown-button" data-activates="dropdown1" href="brands.html">Brands<i class="material-icons right">arrow_drop_down</i></a>
                         </li>
-
-                        <li><a href="/Payments">Payments</a></li>
-                        <li class="li-last"><a href="/Connect">Connect</a></li>
+                        <li>
+                            <a href="underConstruction.html">Payments</a>
+                        </li>
+                        <li class="li-last">
+                            <a href="connect.html">Connect</a>
+                        </li>
 
                     </ul>
 
@@ -91,14 +142,13 @@
         </div>
         <ul class="side-nav center" id="mobile-demo">
             <li class="center-align"><img class="side-nav-img"
-                    src="assets/images/icon.png"></li>
+                    src="assets/images/CompanyLogo/icon.png"></li>
             <hr>
-            <li><a href="/">Home</a></li>
-            <li><a href="/About">About</a></li>
-            <li><a href="/Packages">Brands</a></li>
-            <li><a href="/Packages">Packages</a></li>
-            <li><a href="/Payments">Payments</a></li>
-            <li><a href="/Connect">Connect</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="brands.html">Brands</a></li>
+            <li><a href="underConstruction.html">Payments</a></li>
+            <li><a href="connect.html">Connect</a></li>
         </ul>
 
 
