@@ -117,81 +117,152 @@ $(document).ready(function() {
 
             alphabet: {
                 imgList: ["ALPHABET-1.jpg","ALPHABET-2.jpg","ALPHABET-3.jpg","ALPHABET-4.jpg"],
-                altName: "Alphabet Catalog - "
+                altName: "Alphabet"
             },
             remixA: {
                 imgList: ["REMIXA-1.jpg","REMIXA-2.jpg","REMIXA-3.jpg","REMIXA-4.jpg"],
-                altName: "Remix A Catalog - "
+                altName: "Remix A"
             },
             remixB: {
                 imgList: ["REMIXB-1.jpg","REMIXB-2.jpg","REMIXB-3.jpg","REMIXB-4.jpg"],
-                altName: "Remix B Catalog - "
+                altName: "Remix B"
             },
             remixC: {
                 imgList: ["REMIXC-1.jpg","REMIXC-2.jpg","REMIXC-3.jpg","REMIXC-4.jpg"],
-                altName: "Remix C Catalog - "
+                altName: "Remix C"
             },
             simplyModern: {
                 imgList: ["SM-1.jpg","SM-2.jpg","SM-3.jpg","SM-4.jpg"],
-                altName: "Simply Modern Catalog - "
+                altName: "Simply Modern - "
+            },
+            woodStone: {
+                imgList: ["SM-1.jpg","SM-2.jpg","SM-3.jpg","SM-4.jpg"],
+                altName: "Wood & Stone"
+            },
+            craft: {
+                imgList: ["SM-1.jpg","SM-2.jpg","SM-3.jpg","SM-4.jpg"],
+                altName: "Craft 2017"
+            },
+            lrStyle: {
+                imgList: ["SM-1.jpg","SM-2.jpg","SM-3.jpg","SM-4.jpg"],
+                altName: "Living Room Style"
+            },
+            lrClassic: {
+                imgList: ["SM-1.jpg","SM-2.jpg","SM-3.jpg","SM-4.jpg"],
+                altName: "Living Room Classic"
             }
         },
 
         burgerKing: {
-
+            gardengrill: {
+                imgList: ["GardenGrill-1.jpg","GardenGrill-2.jpg","GardenGrill-3.jpg"],
+                altName: "Garden Grill"
+            },
+            prime: {
+                imgList: ["REMIXA-1.jpg","REMIXA-2.jpg","REMIXA-3.jpg","REMIXA-4.jpg"],
+                altName: "Prime"
+            },
+            improved: {
+                imgList: ["REMIXB-1.jpg","REMIXB-2.jpg","REMIXB-3.jpg","REMIXB-4.jpg"],
+                altName: "Improved"
+            },
+            enhanced: {
+                imgList: ["REMIXC-1.jpg","REMIXC-2.jpg","REMIXC-3.jpg","REMIXC-4.jpg"],
+                altName: "Enhanced"
+            }
         }
     };
 
     $('.modal').modal();
 
-    $(".card").click(function() {
+    $(".mc-packages").click(function() {
 
-        var myClass = $(this).attr("class");
+        var imgPath = "./assets/catalogs/McDonalds/";
+
+        var myClass = $(this).children().attr("class");
         var split = myClass.split(" ");
         var classNeeded = split[2];
 
         if(classNeeded === "alphabet"){
             imgSrc = packages.mcdonalds.alphabet.imgList;
             alt = packages.mcdonalds.alphabet.altName;
-            for(var i = 0; i < imgSrc.length; i++) {
-                console.log("A-ran"+ i);
-                var src = "./assets/catalogs/"+imgSrc[i];
-                runModal(i, src, alt);
-            }
+            fillModal(imgSrc, alt, imgPath);
 
         } else if(classNeeded === "remixA") {
             imgSrc = packages.mcdonalds.remixA.imgList;
             alt = packages.mcdonalds.remixA.altName;
-            for(var i = 0; i < imgSrc.length; i++) {
-                console.log("R-ran" +i);
-                var src = "./assets/catalogs/"+imgSrc[i];
-                runModal(i, src, alt);
-            }
+            fillModal(imgSrc, alt, imgPath);
+
         } else if(classNeeded === "remixB") {
             imgSrc = packages.mcdonalds.remixB.imgList;
             alt = packages.mcdonalds.remixB.altName;
-            for(var i = 0; i < imgSrc.length; i++) {
-                console.log("R-ran" +i);
-                var src = "./assets/catalogs/"+imgSrc[i];
-                runModal(i, src, alt);
-            }
+            fillModal(imgSrc, alt, imgPath);
+
         } else if(classNeeded === "remixC") {
             imgSrc = packages.mcdonalds.remixC.imgList;
             alt = packages.mcdonalds.remixC.altName;
-            for(var i = 0; i < imgSrc.length; i++) {
-                console.log("R-ran" +i);
-                var src = "./assets/catalogs/"+imgSrc[i];
-                runModal(i, src, alt);
-            }
+            fillModal(imgSrc, alt, imgPath);
+
         } else if(classNeeded === "simplyModern") {
             imgSrc = packages.mcdonalds.simplyModern.imgList;
-            alt = packages.mcdonalds.simplyModern.altName + "";
-            for(var i = 0; i < imgSrc.length; i++) {
-                console.log("R-ran" +i);
-                var src = "./assets/catalogs/"+imgSrc[i];
-                runModal(i, src, alt);
-            }
+            alt = packages.mcdonalds.simplyModern.altName;
+            fillModal(imgSrc, alt, imgPath);
+
+        } else if(classNeeded === "woodStone") {
+            imgSrc = packages.mcdonalds.woodStone.imgList;
+            alt = packages.mcdonalds.woodStone.altName;
+            fillModal(imgSrc, alt, imgPath);
+
+        } else if(classNeeded === "craft") {
+            imgSrc = packages.mcdonalds.woodStone.imgList;
+            alt = packages.mcdonalds.woodStone.altName;
+            fillModal(imgSrc, alt, imgPath);
+
+        } else if(classNeeded === "lrStyle") {
+            imgSrc = packages.mcdonalds.lrStyle.imgList;
+            alt = packages.mcdonalds.lrStyle.altName;
+            fillModal(imgSrc, alt, imgPath);
+
+        } else if(classNeeded === "lrClassic") {
+            imgSrc = packages.mcdonalds.lrClassic.imgList;
+            alt = packages.mcdonalds.lrClassic.altName;
+            fillModal(imgSrc, alt, imgPath);
+
         }
+
+        $('#packageModal').modal('open');
+    });
+
+    $(".bk-packages").click(function() {
+
+        var imgPath = "./assets/catalogs/BurgerKing/";
+
+        var myClass = $(this).children().attr("class");
+        var split = myClass.split(" ");
+        var classNeeded = split[2];
+
+        if(classNeeded === "gardengrill"){
+            imgSrc = packages.burgerKing.gardengrill.imgList;
+            alt = packages.burgerKing.gardengrill.altName;
+            fillModal(imgSrc, alt, imgPath);
+
+        } else if(classNeeded === "prime") {
+            imgSrc = packages.burgerKing.prime.imgList;
+            alt = packages.burgerKing.prime.altName;
+            fillModal(imgSrc, alt, imgPath);
+
+        } else if(classNeeded === "improved") {
+            imgSrc = packages.burgerKing.improved.imgList;
+            alt = packages.burgerKing.improved.altName;
+            fillModal(imgSrc, alt, imgPath);
+
+        } else if(classNeeded === "enhanced") {
+            imgSrc = packages.burgerKing.enhanced.imgList;
+            alt = packages.burgerKing.enhanced.altName;
+            fillModal(imgSrc, alt, imgPath);
+
+        }
+
         $('#packageModal').modal('open');
     });
 
@@ -201,6 +272,12 @@ $(document).ready(function() {
 
 });//Document Ready
 
+function fillModal(imgList, altName, path){
+    for(var i = 0; i < imgList.length; i++) {
+        var src = path + imgList[i];
+        runModal(i, src, altName);
+    }
+}
 
 function runModal (i, source, alt) {
     $(".largeImg-"+i).attr("src", source);
@@ -230,7 +307,7 @@ function currentSlide(n) {
 function showSlides(n) {
     var i;
 
-    var slides = document.getElementsByClassName("mySlides");
+    var slides = document.getElementsByClassName("modalSlides");
     var dots = document.getElementsByClassName("thumbnail");
     if (n > slides.length) {
         slideIndex = 1
