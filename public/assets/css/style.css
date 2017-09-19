@@ -124,6 +124,7 @@ nav ul a.active:hover {
 main {
     flex: 1 0 auto;
     height: 100% !important;
+    min-height: 100%;
 }
 
 /*Index*/
@@ -131,17 +132,18 @@ main {
     position: relative;
     width: 100%;
     padding: 50px 5px 0px 5px;
+    overflow: hidden;
 }
 
 .carousel {
     overflow: visible;
-    height: 500px !important;
-    width: 65%;
+    height: 600px !important;
+    width: 60%;
     margin: auto;
 }
 
 .carousel img {
-    height: 500px !important;
+    height: 600px !important;
 }
 
 .carousel-controls {
