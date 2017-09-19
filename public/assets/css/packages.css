@@ -103,15 +103,20 @@
 }
 
 .package-btn.mc-fwd,
-.package-btn.bk-fwd {
+.package-btn.bk-fwd,
+.package-btn.popeyes-fwd{
     right: 0;
 }
 
 .package-btn.mc-prev,
-.package-btn.bk-prev {
+.package-btn.bk-prev,
+.package-btn.popeyes-prev{
     left: 0;
 }
 
+.popeyes-inner {
+    margin: auto;
+}
 
 
 /*Packages-Modal*/

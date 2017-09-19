@@ -15,6 +15,9 @@ $(document).ready(function() {
     var bk_width = 419 * $(".bk-packages").length;
     $(".bk-inner").css("width", bk_width);
 
+    var popeyes_width = 419 * $(".popeyes-packages").length;
+    $(".popeyes-inner").css("width", popeyes_width);
+
     $('select').material_select();
 
     //Nav
@@ -87,6 +90,20 @@ $(document).ready(function() {
 
     $(".bk-prev").on("click",function(){
         $(".bk-outer").animate({
+            scrollLeft:  "-=400",
+            behavior: "smooth"
+        }, 1000);
+    });
+
+    $(".popeyes-fwd").on("click",function(){
+        $(".popeyes-outer").animate({
+            scrollLeft:  "+=400",
+            behavior: "smooth"
+        }, 1000);
+    });
+
+    $(".popeyes-prev").on("click",function(){
+        $(".popeyes-outer").animate({
             scrollLeft:  "-=400",
             behavior: "smooth"
         }, 1000);
