@@ -185,7 +185,7 @@ $(document).ready(function() {
             }
         } else if(classNeeded === "simplyModern") {
             imgSrc = packages.mcdonalds.simplyModern.imgList;
-            alt = packages.mcdonalds.simplyModern.altName;
+            alt = packages.mcdonalds.simplyModern.altName + "";
             for(var i = 0; i < imgSrc.length; i++) {
                 console.log("R-ran" +i);
                 var src = "./assets/catalogs/"+imgSrc[i];

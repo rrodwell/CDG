@@ -253,7 +253,15 @@ img.hover-shadow {
     }
 
     .mc-inner{
-        width: calc(355px * 5) !important;
+        width: calc(355px * 9) !important;
+    }
+
+    .bk-inner{
+        width: calc(355px * 4) !important;
+    }
+
+    .popeyes-inner {
+        width: calc(355px * 1) !important;
     }
 
     .card-image img {
@@ -280,8 +288,20 @@ img.hover-shadow {
         width: 300px;
     }
 
+    .card-content h5 {
+        font-size: 14pt !important;
+    }
+
     .mc-inner{
-        width: calc(340px * 5) !important;
+        width: calc(340px * 9) !important;
+    }
+
+    .bk-inner{
+        width: calc(340px * 4) !important;
+    }
+
+    .popeyes-inner {
+        width: calc(340px * 1) !important;
     }
 
     .card-image img {
@@ -307,8 +327,20 @@ img.hover-shadow {
         padding-bottom: 15px;
     }
 
+    .card-content h5 {
+        font-size: 12pt !important;
+    }
+
     .mc-inner{
-        width: calc(270px * 5) !important;
+        width: calc(270px * 9) !important;
+    }
+
+    .bk-inner{
+        width: calc(270px * 4) !important;
+    }
+
+    .popeyes-inner {
+        width: calc(270px * 1) !important;
     }
 
 
