@@ -12,7 +12,7 @@ $(document).ready(function() {
     var mc_width = 419 * $(".mc-packages").length;
     $(".mc-inner").css("width", mc_width);
 
-    var bk_width = 410 * $(".bk-packages").length;
+    var bk_width = 419 * $(".bk-packages").length;
     $(".bk-inner").css("width", bk_width);
 
     $('select').material_select();
@@ -73,6 +73,20 @@ $(document).ready(function() {
 
     $(".mc-prev").on("click",function(){
         $(".mc-outer").animate({
+            scrollLeft:  "-=400",
+            behavior: "smooth"
+        }, 1000);
+    });
+
+    $(".bk-fwd").on("click",function(){
+        $(".bk-outer").animate({
+            scrollLeft:  "+=400",
+            behavior: "smooth"
+        }, 1000);
+    });
+
+    $(".bk-prev").on("click",function(){
+        $(".bk-outer").animate({
             scrollLeft:  "-=400",
             behavior: "smooth"
         }, 1000);

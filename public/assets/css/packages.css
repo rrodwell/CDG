@@ -102,13 +102,16 @@
     font-weight: 200;
 }
 
-.package-btn.mc-fwd {
+.package-btn.mc-fwd,
+.package-btn.bk-fwd {
     right: 0;
 }
 
-.package-btn.mc-prev {
+.package-btn.mc-prev,
+.package-btn.bk-prev {
     left: 0;
 }
+
 
 
 /*Packages-Modal*/
