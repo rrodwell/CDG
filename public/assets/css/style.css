@@ -228,40 +228,14 @@ footer a {
 
 /*Media Queries*/
 
-@media only screen and (max-width: 1026px) {
-    .main{
-        display: none;
-        visibility: hidden;
-    }
-
-    #slider {
-        display: block;
-        visibility: visible;
-    }
-
-    .slider {
-        height: 100% !important;
-    }
-
-    .slider-body {
-        width: 100%;
-        height: 600px !important;
-        margin: auto;
-    }
-
-    .slider .slides {
-        height: 100% !important;
-    }
-}
-
 @media (max-width: 1200px) {
     /*Nav*/
     nav {
-        height: 88px;
+        height: 100px;
     }
 
     .nav-ul, .nav-ul li i {
-        line-height: 88px;
+        line-height: 100px;
     }
 
     nav ul:not(.side-nav) a {
@@ -271,7 +245,7 @@ footer a {
     .company-logo{
         width: 300px;
         height: auto;
-        margin: 7px 0 5px 5px;
+        margin: 20px 0 5px 5px;
     }
 
     /*Carousel*/
@@ -289,11 +263,15 @@ footer a {
 @media (max-width: 995px) {
     /*Nav*/
     nav {
-        height: 80px;
+        height: 100px;
+    }
+
+    .button-collapse i{
+        line-height: 100px !important;
     }
 
     .nav-ul, .nav-ul li i {
-        line-height: 80px;
+        line-height: 100px;
     }
 
     .button-collapse i {
@@ -307,7 +285,7 @@ footer a {
         transform: translate(-50%, -50%);
         width: 275px;
         height: auto;
-        margin-top: 12px !important;
+        margin-top: 15px !important;
     }
 
     /*Carousel*/
@@ -341,19 +319,18 @@ footer a {
 
 @media (max-width: 768px) {
     /*Nav*/
-    nav {
-        height: 70px;
-    }
-
     .company-logo {
         width: 245px;
-        margin-top: 10px !important;
     }
 
     /*Carousel*/
+    .carousel {
+        width: 100%;
+    }
+
     .carousel-controls {
         position: absolute;
-        top: 25%;
+        top: 50%;
     }
 
     .carousel-controls i{

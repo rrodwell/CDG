@@ -23,35 +23,6 @@
 }
 
 /*Media Queries*/
-
-@media only screen and (max-width: 1026px) {
-    .main{
-        display: none;
-        visibility: hidden;
-    }
-
-    #slider {
-        display: block;
-        visibility: visible;
-    }
-
-    .slider {
-        height: 100% !important;
-    }
-
-    .slider-body {
-        width: 100%;
-        height: 600px !important;
-        margin: auto;
-    }
-
-    .slider .slides {
-        height: 100% !important;
-    }
-
-
-}
-
 @media (max-width: 1200px) {
 
     /*Main*/
