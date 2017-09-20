@@ -1,0 +1,9 @@
+.mc-map {
+    min-height: 100%;
+    padding-top: 45px;
+}
+
+.mc-map img {
+    height: 100%;
+    width: 90%;
+}

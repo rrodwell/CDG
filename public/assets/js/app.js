@@ -196,6 +196,13 @@ $(document).ready(function() {
                 imgList: ["REMIXC-1.jpg","REMIXC-2.jpg","REMIXC-3.jpg","REMIXC-4.jpg"],
                 altName: "Enhanced"
             }
+        },
+
+        popeyes: {
+            lkplus: {
+                imgList: ["LKPlus-1.jpg","LKPlus-2.jpg","LKPlus-3.jpg","LKPlus-4.jpg"],
+                altName: "LK Plus"
+            }
         }
     };
 
@@ -209,55 +216,53 @@ $(document).ready(function() {
         var split = myClass.split(" ");
         var classNeeded = split[2];
 
-        if(classNeeded === "alphabet"){
+        if(classNeeded === "alphabet") {
             imgSrc = packages.mcdonalds.alphabet.imgList;
             alt = packages.mcdonalds.alphabet.altName;
-            fillModal(imgSrc, alt, imgPath);
+            buildModal(imgSrc, alt, imgPath);
 
         } else if(classNeeded === "remixA") {
             imgSrc = packages.mcdonalds.remixA.imgList;
             alt = packages.mcdonalds.remixA.altName;
-            fillModal(imgSrc, alt, imgPath);
+            buildModal(imgSrc, alt, imgPath);
 
         } else if(classNeeded === "remixB") {
             imgSrc = packages.mcdonalds.remixB.imgList;
             alt = packages.mcdonalds.remixB.altName;
-            fillModal(imgSrc, alt, imgPath);
+            buildModal(imgSrc, alt, imgPath);
 
         } else if(classNeeded === "remixC") {
             imgSrc = packages.mcdonalds.remixC.imgList;
             alt = packages.mcdonalds.remixC.altName;
-            fillModal(imgSrc, alt, imgPath);
+            buildModal(imgSrc, alt, imgPath);
 
         } else if(classNeeded === "simplyModern") {
             imgSrc = packages.mcdonalds.simplyModern.imgList;
             alt = packages.mcdonalds.simplyModern.altName;
-            fillModal(imgSrc, alt, imgPath);
+            buildModal(imgSrc, alt, imgPath);
 
         } else if(classNeeded === "woodStone") {
             imgSrc = packages.mcdonalds.woodStone.imgList;
             alt = packages.mcdonalds.woodStone.altName;
-            fillModal(imgSrc, alt, imgPath);
+            buildModal(imgSrc, alt, imgPath);
 
         } else if(classNeeded === "craft") {
             imgSrc = packages.mcdonalds.woodStone.imgList;
             alt = packages.mcdonalds.woodStone.altName;
-            fillModal(imgSrc, alt, imgPath);
+            buildModal(imgSrc, alt, imgPath);
 
         } else if(classNeeded === "lrStyle") {
             imgSrc = packages.mcdonalds.lrStyle.imgList;
             alt = packages.mcdonalds.lrStyle.altName;
-            fillModal(imgSrc, alt, imgPath);
+            buildModal(imgSrc, alt, imgPath);
 
         } else if(classNeeded === "lrClassic") {
             imgSrc = packages.mcdonalds.lrClassic.imgList;
             alt = packages.mcdonalds.lrClassic.altName;
-            fillModal(imgSrc, alt, imgPath);
+            buildModal(imgSrc, alt, imgPath);
 
         }
-
-        $('#packageModal').modal('open');
-    });
+    buildModal(imgSrc, alt, imgPath);});
 
     $(".bk-packages").click(function() {
 
@@ -270,26 +275,40 @@ $(document).ready(function() {
         if(classNeeded === "gardengrill"){
             imgSrc = packages.burgerKing.gardengrill.imgList;
             alt = packages.burgerKing.gardengrill.altName;
-            fillModal(imgSrc, alt, imgPath);
+            buildModal(imgSrc, alt, imgPath);
 
         } else if(classNeeded === "prime") {
             imgSrc = packages.burgerKing.prime.imgList;
             alt = packages.burgerKing.prime.altName;
-            fillModal(imgSrc, alt, imgPath);
+            buildModal(imgSrc, alt, imgPath);
 
         } else if(classNeeded === "improved") {
             imgSrc = packages.burgerKing.improved.imgList;
             alt = packages.burgerKing.improved.altName;
-            fillModal(imgSrc, alt, imgPath);
+            buildModal(imgSrc, alt, imgPath);
 
         } else if(classNeeded === "enhanced") {
             imgSrc = packages.burgerKing.enhanced.imgList;
             alt = packages.burgerKing.enhanced.altName;
-            fillModal(imgSrc, alt, imgPath);
+            buildModal(imgSrc, alt, imgPath);
 
         }
+    });
 
-        $('#packageModal').modal('open');
+    $(".popeyes-packages").click(function() {
+
+        var imgPath = "./assets/catalogs/Popeyes/";
+
+        var myClass = $(this).children().attr("class");
+        var split = myClass.split(" ");
+        var classNeeded = split[2];
+
+        if(classNeeded === "lkplus"){
+            imgSrc = packages.popeyes.lkplus.imgList;
+            alt = packages.popeyes.lkplus.altName;
+            buildModal(imgSrc, alt, imgPath);
+
+        }
     });
 
     // Map
@@ -298,29 +317,48 @@ $(document).ready(function() {
 
 });//Document Ready
 
-function fillModal(imgList, altName, path){
-    for(var i = 0; i < imgList.length; i++) {
-        var src = path + imgList[i];
-        runModal(i, src, altName);
+function buildModal (imgArray, altName, imgRoute) {
+    $('.modal-container').empty();
+    $('.modal-row').empty();
+    for(var i = 0; i < imgArray.length; i++) {
+        var modalSlides = $('<div>');
+        modalSlides.addClass("modalSlides");
+        var currentSlideNum = i + 1;
+        var slideImg = $('<img>');
+        var path = imgRoute + imgArray[i];
+        slideImg.attr("src", path);
+
+        modalSlides.append(slideImg);
+        $('.modal-container').append(modalSlides);
+
+        var column = $('<div>');
+        column.addClass("col s3");
+        var thumbnailImg = $('<img>');
+        thumbnailImg.attr("src",path).attr("alt", altName);
+        thumbnailImg.addClass("thumbnail");
+        thumbnailImg.attr("onclick", "currentSlide("+currentSlideNum+")");
+        column.append(thumbnailImg);
+
+        $(".modal-row").append(column);
+
     }
+    console.log("modal build complete");
+    openModal();
 }
 
-function runModal (i, source, alt) {
-    $(".largeImg-"+i).attr("src", source);
-    $(".thumbnail-"+i).attr("src", source).attr("alt", alt);
-}
 
 function openModal() {
-    document.getElementById('packageModal').style.display = "block";
+    console.log("opening modal");
+    var slideIndex = 1;
+    $('#packageModal').modal('open');
+    showSlides(slideIndex);
 }
 
 function closeModal() {
-    document.getElementById('packageModal').style.display = "none";
-    $('#packageModal').modal('close');
+    $('.modal').modal('close');
 }
 
 var slideIndex = 1;
-showSlides(slideIndex);
 
 function plusSlides(n) {
     showSlides(slideIndex += n);
@@ -331,22 +369,41 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
+    console.log("n: ",n);
     var i;
 
     var slides = document.getElementsByClassName("modalSlides");
+    console.log("slides: ",slides);
+    console.log("nslides length: ",slides.length);
+
     var dots = document.getElementsByClassName("thumbnail");
+    console.log("dots: ",dots);
+
     if (n > slides.length) {
-        slideIndex = 1
+        slideIndex = 1;
+        slides[slideIndex].style.display = "block";
+        console.log("ran if 1");
     }
     if (n < 1) {
-        slideIndex = slides.length
+        slideIndex = slides.length;
+        console.log("ran if 2");
     }
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
+        console.log("for-loops on slide display")
     }
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
+        console.log("for-loop on dots class name");
     }
-    slides[slideIndex - 1].style.display = "block";
+
+    if(slideIndex > slides.length){
+        slides[0].style.display = "block";
+    } else {
+        slides[slideIndex - 1].style.display = "block";
+        console.log("slides style to block");
+        console.log(slideIndex);
+    }
     dots[slideIndex - 1].className += " active";
+    console.log("dots class name to active");
 }
