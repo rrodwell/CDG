@@ -1,0 +1,41 @@
+.brands {
+    min-height: 100%;
+    padding-top: 45px;
+}
+
+.brands img {
+    height: 100%;
+    width: 90%;
+}
+
+.main.row.col {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.main h3 {
+    font-weight: 700;
+    line-height: 80px;
+
+}
+
+.card {
+    background-color: #f5f5f5;
+}
+
+.card-content {
+    background-image: url(../images/CompanyLogo/brushedSteel.jpg);
+    background-size: cover;
+}
+
+
+.card-image img {
+    height: 300px;
+}
+
+.card-content {
+    height: 100%;
+    padding: 5px !important;
+}
+
+

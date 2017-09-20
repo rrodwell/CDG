@@ -66,6 +66,32 @@ $(document).ready(function() {
     });
 
 
+    // Route to Packages
+    $(".go-to-packages").click(function() {
+
+        var myClass = $(this).children().attr("class");
+        var split = myClass.split(" ");
+        var classNeeded = split[2];
+
+        if(classNeeded === "mcdonalds") {
+
+            window.location = "packages.html#mcdonalds";
+
+        } else if(classNeeded === "burgerking") {
+
+            window.location = "packages.html#burgerking";
+
+        } else if(classNeeded === "popeyes") {
+
+            window.location = "packages.html#popeyes";
+
+        } else {
+
+            window.location = "otherBrands.html";
+        }
+
+    });
+
     // Package Buttons
     $(".mc-fwd").on("click",function(){
         $(".mc-outer").animate({

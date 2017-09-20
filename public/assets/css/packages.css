@@ -3,8 +3,6 @@
 .package-body {
     width: 99%;
     margin: 60px auto 0 auto;
-    /*background-image: url(../images/brushedSteel.jpg);*/
-    /*background-size: cover;*/
     padding-top: 10px;
     padding-bottom: 5px;
 }
@@ -31,8 +29,8 @@
 }
 
 .package-outer::-webkit-scrollbar {
-    width: 0; /* remove scrollbar space */
-    background: transparent; /* optional: just make scrollbar invisible */
+    width: 0;
+    background: transparent;
 }
 
 
@@ -44,7 +42,6 @@
     position: relative;
     width: 100%;
     padding-top: 10px;
-    /*box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6), 0 0 5px 0 rgba(0, 0, 0, 0.19);*/
 }
 
 .card-title {
@@ -58,11 +55,9 @@
 .card-content {
     height: 100%;
     padding: 0 !important;
-
 }
 
 .card {
-    /*background-color: lightgrey;*/
     background-image: url(../images/CompanyLogo/brushedSteel.jpg);
     background-size: cover;
 }
