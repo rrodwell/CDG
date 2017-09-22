@@ -5,8 +5,9 @@
 }
 
 .connect-outer-container{
-    background-image: url(../images/CompanyLogo/brushedSteel.jpg);
-    background-size: cover;
+    /*background-image: url(../images/CompanyLogo/brushedSteel.jpg);*/
+    /*background-size: cover;*/
+    background-color: #FFFFFF;
     width: 100%;
     height: 100%;
     margin: 50px auto 0 auto;
@@ -15,14 +16,20 @@
 }
 
 .connect-inner-container {
-    /*background-image: url(../images/brushedSteel.jpg);*/
+    /*background-image: url(../images/CompanyLogo/brushedSteel.jpg);*/
     /*background-size: cover;*/
-    background-color: #FFFFFF;
+    /*background-color: #FFFFFF;*/
     width: 98%;
     margin: 5px auto;
     padding: 1%;
 
 }
+
+.flex-box {
+    background-color: white;
+    margin-bottom: 0;
+}
+
 .connect-inner-container h3, h4 {
     text-align: left;
 }
@@ -45,13 +52,13 @@
 }
 
 .office-address ul li a {
-    font-size: 16pt;
+    font-size: 15pt;
     color: #242424;
 
 }
 
-.office-address h5 {
-    font-size: 16pt;
+.office-address ul li.phone a {
+    font-size: 13pt;
     color: #242424;
 }
 
@@ -146,8 +153,8 @@ form .row {
         margin: 20px auto 0 auto;
     }
 
-    .office-address ul li a {
-        font-size: 11pt;
+    .office-address ul li a, .office-address ul li.phone a {
+        font-size: 15pt;
     }
 
     .office-address h5 {
@@ -170,6 +177,14 @@ form .row {
         order: 1;
     }
 
+    .logo-section {
+        text-align: right;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -178,20 +193,15 @@ form .row {
         padding-left: 5px !important;
     }
 
-    .office-address ul li a {
-        font-size: 11pt;
+    .office-address ul li a, .office-address ul li.phone a {
+        font-size: 12pt;
     }
 
     .office-address h5 {
         font-size: 10pt;
     }
 
-    .logo-section {
-        text-align: right;
-    }
-
     iframe {
-        width: 100%;
         height: 250px !important;
     }
 
