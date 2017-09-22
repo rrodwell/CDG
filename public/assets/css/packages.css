@@ -316,7 +316,7 @@ img.hover-shadow {
     }
 
     .package-outer{
-        width: 99%
+        width: 85%
     }
 
     .card-slider {
@@ -342,10 +342,6 @@ img.hover-shadow {
 
     .card-image img {
         height: 250px;
-    }
-
-    .carousel-controls.package-btn {
-        top: 90%;
     }
 
     /*Modal*/
