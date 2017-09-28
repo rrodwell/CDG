@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Other Brands | Casablanca Design Group</title>
+        <title>Refund Policy | Casablanca Design Group</title>
 
         <link rel="shortcut icon" href="./assets/images/CompanyLogo/icon.png">
 
@@ -20,7 +20,6 @@
 
         <!--Stylesheet-->
         <link rel="stylesheet" href="./assets/css/style.css">
-        <link rel="stylesheet" href="./assets/css/other-brands.css">
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -43,7 +42,7 @@
                 <a class="dropdown-button-nested" data-activates="dropdown4" >Popeyes<i class="material-icons right">arrow_drop_down</i></a>
             </li>
             <li>
-                <a href="otherBrands.html">Other Brands</a>
+                <a href="otherbrands.html">Other Brands</a>
             </li>
         </ul>
 
@@ -110,6 +109,15 @@
             </li>
         </ul>
 
+        <!-- Dropdown Payments -->
+        <ul id="dropdown5" class="dropdown-content">
+            <li><a href="privacypolicy.html">Privacy Policy</a>
+            </li>
+            <li>
+                <a href="refundpolicy.html">Refund Policy</a>
+            </li>
+        </ul>
+
 
         <div class="navbar-fixed">
             <nav id="navbar">
@@ -129,8 +137,8 @@
                         <li class="dropdown">
                             <a class="dropdown-button" data-activates="dropdown1" href="brands.html">Brands<i class="material-icons right">arrow_drop_down</i></a>
                         </li>
-                        <li>
-                            <a href="underConstruction.html">Payments</a>
+                        <li class="dropdown">
+                            <a class="dropdown-button" data-activates="dropdown5">Payments<i class="material-icons right">arrow_drop_down</i></a>
                         </li>
                         <li class="li-last">
                             <a href="connect.html">Connect</a>
@@ -141,25 +149,49 @@
                 </div>
             </nav>
         </div>
-        <ul class="side-nav center" id="mobile-demo">
+        <ul class="side-nav" id="mobile-demo">
             <li class="center-align"><img class="side-nav-img"
                     src="assets/images/CompanyLogo/icon.png"></li>
             <hr>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="brands.html">Brands</a></li>
-            <li><a href="underConstruction.html">Payments</a></li>
+            <li>
+                <ul class="collapsible collapsible-accordion">
+                    <li class="bold"><a class="collapsible-header">Brands</a>
+                        <div class="collapsible-body" style="display: block;">
+                            <ul>
+                                <li><a href="packages.html#mcdonalds">McDonald's</a></li>
+                                <li><a href="packages.html#burgerking">Burger King</a></li>
+                                <li><a href="packages.html#popeyes">Popeyes</a></li>
+                                <li><a href="otherbrands.html">Other Brands</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header">Payments</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                                <li><a href="refundpolicy.html">Refund Policy</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
             <li><a href="connect.html">Connect</a></li>
         </ul>
 
         <main>
-
-            <div class="other-brands center">
-                <img src="assets/catalogs/Other/CDGBrochureB.jpg">
-                <img src="assets/catalogs/Other/CDGBrochureC.jpg">
-                <img src="assets/catalogs/Other/CDGBrochureD.jpg">
+            <div class="main">
+                <div class="carousel carousel-slider">
+                    <a class="carousel-item" href="#one!"><img class="responsive-img" src="./assets/images/CarouselImages/ALPHABET2017.jpg"></a>
+                    <a class="carousel-item" href="#two!"><img class="responsive-img" src="./assets/images/CarouselImages/GardenGrill2017.jpg"></a>
+                    <a class="carousel-item" href="#three!"><img class="responsive-img" src="./assets/images/CarouselImages/REMIXC2017.jpg"></a>
+                    <a class="carousel-item" href="#four!"><img class="responsive-img" src="./assets/images/CarouselImages/SM2017.jpg"></a>
+                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-controls carousel-prev"><i class="material-icons">chevron_left</i></a>
+                <a class="right carousel-controls carousel-fwd"><i class="material-icons">chevron_right</i></a>
             </div>
-
         </main>
 
         <footer class="page-footer">
@@ -181,10 +213,13 @@
                 </div>
             </div>
         </footer>
+
+
         <!--jQuery-->
         <script type="text/javascript"
                 src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script type="text/javascript" src="./assets/js/materialize.min.js"></script>
+        <script type="text/javascript"
+                src="./assets/js/materialize.min.js"></script>
         <script type="text/javascript" src="./assets/js/app.js"></script>
     </body>
 </html>

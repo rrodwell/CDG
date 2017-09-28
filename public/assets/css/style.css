@@ -74,6 +74,8 @@ nav .button-collapse i {
 
 .side-nav li>a {
     font-size: large;
+    font-weight: 600;
+    padding: 0 16px;
 }
 
 .side-nav-img {
@@ -120,6 +122,11 @@ nav ul a.active:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+.side-nav .collapsible-body li a, .side-nav.fixed .collapsible-body li a {
+    padding: 0 23.5px 0 31px;
+    font-size: 12pt;
+    font-weight: 400;
+}
 
 main {
     flex: 1 0 auto;
