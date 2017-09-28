@@ -1,9 +1,25 @@
 .about-section {
-    min-height: 100%;
-    padding-top: 70px;
+    display: flex;
+    flex: 1; /* same as flex: 1 1 auto; */
+    flex-direction: row;
+    justify-content: flex-start; /* align items in Main Axis */
+    align-items: stretch; /* align items in Cross Axis */
+    align-content: stretch; /* Extra space in Cross Axis */
 }
 
 .about-section img {
-    height: 100%;
+    margin: 5% auto 2% auto;
+    /*height: 100%;*/
     width: 90%;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        padding-top: 50px;
+    }
+
+    .about-section img {
+        height: 550px;
+    }
+
 }
