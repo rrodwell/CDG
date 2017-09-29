@@ -54,9 +54,6 @@ main {
 
 
 @media (max-width: 995px) {
-    .policies {
-        margin: 10% auto;
-    }
 
     .policies-container .row {
         flex-direction: column;
@@ -83,6 +80,10 @@ main {
 }
 
 @media (max-width: 768px) {
+    .policies {
+    margin: 10% auto;
+    }
+
     .policy-img ul {
         display: inline-block;
     }
