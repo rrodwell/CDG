@@ -21,11 +21,12 @@ main {
         height: auto;
     }
     .about-section {
-        padding-top: 50px;
+        padding-top: 30px;
     }
 
     .about-section img {
         height: 550px;
+        width: 99%;
     }
 
 }
