@@ -16,6 +16,12 @@ main {
     width: 85%;
 }
 
+@media (max-width: 995px) {
+    main {
+        height: auto;
+    }
+}
+
 @media (max-width: 768px) {
     main {
         height: auto;
