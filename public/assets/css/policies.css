@@ -1,16 +1,91 @@
+main {
+    height: auto;
+}
 
 .policies {
-    background-image: url(../images/CompanyLogo/brushedSteel.jpg);
-    background-size: cover;
     width: 99%;
-    margin: 5% auto;
+    margin: 2% auto;
     padding: 2%;
 }
 
 .policies-container {
-    background-color: white;
     width: 99%;
-    height: 100%;
     margin: auto;
-    padding: 5%;
+    overflow: hidden;
 }
+
+.policies-container .row {
+    background-image: url(../images/CompanyLogo/brushedSteel.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+}
+
+.policy-info{
+    margin-top: 14.5px;
+}
+
+.flex-text {
+    padding: 5%;
+    height: 60%;
+    background-color: rgba(255,255,255,0.85);
+}
+
+.flex-text h3 {
+    font-weight: 800;
+    margin-bottom: 6%;
+}
+
+.flex-text p {
+    font-size: large;
+}
+
+.policies-container ul li {
+    line-height: 36px;
+}
+
+.policy-img img {
+    width: 400px;
+    height: 300px;
+}
+
+
+@media (max-width: 995px) {
+    .policies {
+        margin: 10% auto;
+    }
+
+    .policies-container .row {
+        flex-direction: column;
+    }
+
+    .policy-info {
+        height: 100%;
+        min-width: 100% !important;
+        margin: 1% auto;
+    }
+
+    .policy-img {
+        min-width: 100% !important;
+    }
+
+    .policy-img ul {
+        display: flex;
+    }
+
+    .policy-img ul li {
+        margin: auto;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .policy-img ul {
+        display: inline-block;
+    }
+
+}
+
