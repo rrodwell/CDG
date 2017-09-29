@@ -1,3 +1,6 @@
+main {
+    height: 100%;
+}
 /*Under Construction*/
 .main-section {
     width: 100%;
@@ -14,6 +17,10 @@
     margin-bottom: 0;
     padding-bottom: 30px;
     text-align: center;
+}
+
+.carousel-controls {
+    top: 40%;
 }
 
 #logo {

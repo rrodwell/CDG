@@ -1,3 +1,7 @@
+main {
+    height: 100%;
+}
+
 .about-section {
     display: flex;
     flex: 1; /* same as flex: 1 1 auto; */
@@ -8,12 +12,14 @@
 }
 
 .about-section img {
-    margin: 5% auto 2% auto;
-    /*height: 100%;*/
-    width: 90%;
+    margin: 5% auto 1% auto;
+    width: 85%;
 }
 
 @media (max-width: 768px) {
+    main {
+        height: auto;
+    }
     .about-section {
         padding-top: 50px;
     }

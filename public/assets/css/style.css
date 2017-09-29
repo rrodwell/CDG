@@ -8,11 +8,6 @@ html, body {
 
 body {
     background-color: #FFFFFF;
-    /*background-image: url(../images/brushedSteel.jpg);*/
-    /*background-size: cover;*/
-    /*display: flex;*/
-    /*min-height: 100vh;*/
-    /*flex-direction: column;*/
     font-family: LaoUI;
 }
 
@@ -32,8 +27,6 @@ body {
 nav {
     background-color: #FFFFFF;
     height: 120px;
-    /*background-image: url(../images/brushedSteel.jpg);*/
-    /*background-size: cover;*/
     box-shadow: 0 0 0px 0 rgba(0, 0, 0, 0.6), 0 0 0px 0 rgba(0, 0, 0, 0.19);
 
 }
@@ -138,7 +131,7 @@ nav ul a.active:hover {
 
 main {
     width: 100%;
-    height: 100%;
+    height: 80%;
 
     display: flex;
     flex-direction: column;
@@ -156,7 +149,6 @@ main {
     justify-content: flex-start;
     align-items: stretch;
     align-content: stretch;
-    padding-top: 37px;
     overflow: hidden;
 }
 
@@ -168,7 +160,7 @@ main {
 }
 
 .carousel img {
-    height: 600px !important;
+    height: 100% !important;
 }
 
 .carousel-controls {
@@ -276,11 +268,6 @@ footer a {
     }
 
     /*Carousel*/
-    .carousel-controls {
-        position: absolute;
-        top: 45%;
-    }
-
     .carousel-controls i{
         font-size: 45pt;
     }
@@ -316,11 +303,6 @@ footer a {
     }
 
     /*Carousel*/
-    .carousel-controls {
-        position: absolute;
-        top: 40%;
-    }
-
     .carousel-controls i{
         font-size: 40pt;
     }
@@ -353,16 +335,6 @@ footer a {
     /*Carousel*/
     .carousel {
         width: 100%;
-        height: 475px !important;
-    }
-
-    .carousel img {
-        height: 475px !important;
-    }
-
-    .carousel-controls {
-        position: absolute;
-        top: 50%;
     }
 
     .carousel-controls i{
