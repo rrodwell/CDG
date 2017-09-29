@@ -3,12 +3,6 @@
  */
 $(document).ready(function() {
 
-    // var isLargeWindow;
-    // $(window).on('resize', function() {
-    //     isLargeWindow = $(this).width() > 992;
-    // });
-
-
     var mc_width = 419 * $(".mc-packages").length;
     $(".mc-inner").css("width", mc_width);
 
@@ -87,7 +81,7 @@ $(document).ready(function() {
 
         } else {
 
-            window.location = "otherBrands.html";
+            window.location = "otherbrands.html";
         }
 
     });
