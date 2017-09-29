@@ -1,9 +1,6 @@
-main {
-    height: auto;
-}
-
 .policies {
     width: 99%;
+    height: 100%;
     margin: 2% auto;
     padding: 2%;
 }
@@ -19,7 +16,6 @@ main {
     background-size: cover;
     display: flex;
     flex-direction: row;
-    flex: 1;
     flex-wrap: wrap;
     margin-bottom: 0;
 }
@@ -57,6 +53,7 @@ main {
 
     .policies-container .row {
         flex-direction: column;
+        flex: 1;
     }
 
     .policy-info {
@@ -82,7 +79,7 @@ main {
 @media (max-width: 995px) {
 
     .policies {
-        margin: 3% auto;
+        margin: 3% auto 0 auto;
     }
 
     .policy-img ul li {
@@ -92,6 +89,9 @@ main {
 }
 
 @media (max-width: 640px) {
+    main {
+        height: auto;
+    }
 
     .policies {
         margin: 8% auto;
