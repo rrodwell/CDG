@@ -25,6 +25,7 @@ main {
     }
 
     .about-section img {
+        margin: 2% auto 1% auto;
         height: 550px;
         width: 99%;
     }

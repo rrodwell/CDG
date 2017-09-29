@@ -53,7 +53,7 @@ main {
 }
 
 
-@media (max-width: 995px) {
+@media (max-width: 1026px) {
 
     .policies-container .row {
         flex-direction: column;
@@ -79,13 +79,30 @@ main {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 995px) {
+
     .policies {
-    margin: 10% auto;
+        margin: 3% auto;
+    }
+
+    .policy-img ul li {
+        margin: 10px;
+    }
+
+}
+
+@media (max-width: 640px) {
+
+    .policies {
+        margin: 8% auto;
     }
 
     .policy-img ul {
         display: inline-block;
+    }
+
+    .policy-img ul li {
+        margin: auto;
     }
 
 }
