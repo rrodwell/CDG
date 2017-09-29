@@ -3,12 +3,12 @@ main {
 }
 
 .about-section {
-    display: flex;
-    flex: 1; /* same as flex: 1 1 auto; */
-    flex-direction: row;
-    justify-content: flex-start; /* align items in Main Axis */
-    align-items: stretch; /* align items in Cross Axis */
-    align-content: stretch; /* Extra space in Cross Axis */
+    /*display: flex;*/
+    /*flex: 1; !* same as flex: 1 1 auto; *!*/
+    /*flex-direction: row;*/
+    /*justify-content: flex-start; !* align items in Main Axis *!*/
+    /*align-items: stretch; !* align items in Cross Axis *!*/
+    /*align-content: stretch; !* Extra space in Cross Axis *!*/
 }
 
 .about-section img {
@@ -17,9 +17,7 @@ main {
 }
 
 @media (max-width: 995px) {
-    main {
-        height: auto;
-    }
+
 }
 
 @media (max-width: 768px) {
