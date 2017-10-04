@@ -1,3 +1,7 @@
+main {
+    height: 120%;
+}
+
 .about-section {
     min-height: 100%;
     display: flex;
@@ -14,6 +18,9 @@
 }
 
 @media (max-width: 768px) {
+    main {
+        height: 80%;
+    }
     .about-section {
         padding-top: 30px;
     }
