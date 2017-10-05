@@ -13,7 +13,7 @@ main {
 
 .brands img {
     height: 100%;
-    width: 85%;
+    width: 90%;
 }
 
 .main.row.col {
@@ -22,7 +22,7 @@ main {
 }
 
 .main h3 {
-    font-weight: 700;
+    font-weight: 900;
     line-height: 80px;
 
 }
@@ -44,7 +44,7 @@ main {
 
 
 .card-image img {
-    height: 300px;
+    height: 250px;
 }
 
 .card-content {
@@ -52,18 +52,26 @@ main {
     padding: 5px !important;
 }
 
+.card-content h5 {
+    font-size: large;
+}
+
 
 @media (max-width: 1200px) {
     .card-content h5 {
-        font-size: large !important;
+        font-size: medium !important;
     }
 
 }
 
 @media (max-width: 995px) {
     .card {
-        width: 300px;
+        width: 250px;
         margin: 15px auto;
+    }
+
+    .container .row {
+        margin: auto !important;
     }
 }
 
@@ -74,13 +82,14 @@ main {
     }
 
     .card {
-        width: 200px;
+        width: 175px;
         height: 100%;
         margin: auto;
     }
 
     .card-image img {
-        height: 250px;
+        height: 200px;
     }
+
 }
 
