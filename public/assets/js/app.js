@@ -160,16 +160,8 @@ $(document).ready(function() {
                 altName: "Wood & Stone"
             },
             craft: {
-                imgList: ["SM-1.jpg","SM-2.jpg","SM-3.jpg","SM-4.jpg"],
+                imgList: ["CRAFT-1.jpg","SM-2.jpg","SM-3.jpg","SM-4.jpg"],
                 altName: "Craft 2017"
-            },
-            lrStyle: {
-                imgList: ["SM-1.jpg","SM-2.jpg","SM-3.jpg","SM-4.jpg"],
-                altName: "Living Room Style"
-            },
-            lrClassic: {
-                imgList: ["SM-1.jpg","SM-2.jpg","SM-3.jpg","SM-4.jpg"],
-                altName: "Living Room Classic"
             }
         },
 
@@ -245,17 +237,8 @@ $(document).ready(function() {
             alt = packages.mcdonalds.woodStone.altName;
             buildModal(imgSrc, alt, imgPath);
 
-        } else if(classNeeded === "lrStyle") {
-            imgSrc = packages.mcdonalds.lrStyle.imgList;
-            alt = packages.mcdonalds.lrStyle.altName;
-            buildModal(imgSrc, alt, imgPath);
-
-        } else if(classNeeded === "lrClassic") {
-            imgSrc = packages.mcdonalds.lrClassic.imgList;
-            alt = packages.mcdonalds.lrClassic.altName;
-            buildModal(imgSrc, alt, imgPath);
-
         }
+
     buildModal(imgSrc, alt, imgPath);});
 
     $(".bk-packages").click(function() {

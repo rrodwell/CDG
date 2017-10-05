@@ -126,7 +126,7 @@ main {
     height: 100%;
     max-height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .modal-content {
@@ -164,7 +164,7 @@ main {
 
 .modalSlides img{
     width: 100%;
-    max-height: 800px;
+    /*max-height: 800px;*/
 }
 
 .prev,
