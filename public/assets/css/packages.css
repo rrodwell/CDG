@@ -245,7 +245,7 @@ img.hover-shadow {
     }
 
     .mc-inner{
-        width: calc(355px * 9) !important;
+        width: calc(355px * 7) !important;
     }
 
     .bk-inner{
@@ -281,7 +281,7 @@ img.hover-shadow {
     }
 
     .mc-inner{
-        width: calc(340px * 9) !important;
+        width: calc(340px * 7) !important;
     }
 
     .bk-inner{
@@ -320,7 +320,7 @@ img.hover-shadow {
     }
 
     .mc-inner{
-        width: calc(270px * 9) !important;
+        width: calc(270px * 7) !important;
     }
 
     .bk-inner{
