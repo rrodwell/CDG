@@ -20,7 +20,7 @@ main {
 }
 
 .package-outer {
-    overflow: scroll;
+    overflow: hidden;
     height: 100%;
     width: 93%;
     margin: auto;
