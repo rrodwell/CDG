@@ -171,15 +171,15 @@ $(document).ready(function() {
                 altName: "Garden Grill"
             },
             prime: {
-                imgList: ["Improved-1.jpg","Improved-2.jpg","Improved-3.jpg","Improved-4.jpg","Improved-5.jpg"],
+                imgList: ["Prime-1.jpg","Prime-2.jpg","Prime-3.jpg","Prime-4.jpg"],
                 altName: "Prime"
             },
             improved: {
-                imgList: ["Improved-1.jpg","Improved-2.jpg","Improved-3.jpg","Improved-4.jpg","Improved-5.jpg"],
+                imgList: ["Improved-1.jpg","Improved-2.jpg"],
                 altName: "Improved"
             },
             enhanced: {
-                imgList: ["Improved-1.jpg","Improved-2.jpg","Improved-3.jpg","Improved-4.jpg","Improved-5.jpg"],
+                imgList: ["Enhanced-1.jpg","Enhanced-2.jpg","Enhanced-3.jpg"],
                 altName: "Enhanced"
             }
         },
