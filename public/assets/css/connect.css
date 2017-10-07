@@ -139,6 +139,10 @@ form .row {
     padding-top: 25px;
 }
 
+.last-name {
+    visibility: hidden !important;
+}
+
 
 /*Media Queries*/
 
@@ -208,6 +212,10 @@ form .row {
         height: 250px !important;
     }
 
+}
 
-
+@media (max-width: 650px) {
+    .last-name {
+        visibility: visible !important;
+    }
 }
