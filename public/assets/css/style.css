@@ -372,7 +372,7 @@ footer a {
 @media (max-width: 650px) {
     /*Footer*/
     footer h5 {
-        font-size: medium;
+        font-size: 12pt;
     }
 
     .footer-info {
