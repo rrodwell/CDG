@@ -83,6 +83,11 @@ main {
 
 @media (max-width: 995px) {
 
+    .policies-container .row {
+        display: flex;
+        flex-direction: row;
+    }
+
     .policies {
         margin: 3% auto 0 auto;
     }
@@ -96,12 +101,12 @@ main {
 @media (max-width: 640px) {
 
     .policies {
-        height: 700px;
-        margin: 150px auto !important;
+        height: auto;
+        margin: 15% auto !important;
     }
 
     .policy-img ul {
-        display: inline;
+        display: inline-block;
     }
 
     .policy-img ul li {
