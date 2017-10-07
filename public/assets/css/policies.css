@@ -96,7 +96,7 @@ main {
 @media (max-width: 640px) {
 
     .policies {
-        height: auto;
+        height: 700px;
         margin: 150px auto !important;
     }
 
