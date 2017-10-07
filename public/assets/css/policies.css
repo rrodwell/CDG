@@ -94,12 +94,10 @@ main {
 }
 
 @media (max-width: 640px) {
-    main {
-        height: 100%;
-    }
 
     .policies {
-        margin: 10% auto !important;
+        height: auto;
+        margin: 150px auto !important;
     }
 
     .policy-img ul {
