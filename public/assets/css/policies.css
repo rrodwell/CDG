@@ -99,11 +99,11 @@ main {
     }
 
     .policies {
-        margin: 10% auto;
+        margin: 10% auto !important;
     }
 
     .policy-img ul {
-        display: inline-block;
+        display: inline;
     }
 
     .policy-img ul li {
