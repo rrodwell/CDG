@@ -95,7 +95,7 @@ main {
 
 @media (max-width: 640px) {
     main {
-        height: auto;
+        height: 100%;
     }
 
     .policies {
