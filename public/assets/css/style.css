@@ -368,3 +368,18 @@ footer a {
     }
 
 }
+
+@media (max-width: 650px) {
+    /*Footer*/
+    footer h5 {
+        font-size: medium;
+    }
+
+    .footer-info {
+        font-size: 9pt;
+    }
+
+    .footer-info li:last-child {
+        font-size: 7pt;
+    }
+}
