@@ -276,6 +276,10 @@ img.hover-shadow {
         width: 300px;
     }
 
+    .package-outer{
+        overflow: visible;
+    }
+
     .card-content h5 {
         font-size: 14pt !important;
     }

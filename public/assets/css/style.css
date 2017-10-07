@@ -343,11 +343,6 @@ footer a {
          font-weight: 300;
     }
 
-    .mc-control {
-        right: 0 !important;
-        top: 40% !important;
-    }
-
     .carousel-item h2 {
         font-size: 12pt !important;
         bottom: 10px !important;
@@ -373,6 +368,10 @@ footer a {
     /*Nav*/
     .company-logo {
         width: 225px;
+    }
+
+    .carousel-prev {
+        left: 5px;
     }
 
     /*Footer*/
