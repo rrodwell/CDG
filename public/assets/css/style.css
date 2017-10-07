@@ -370,6 +370,11 @@ footer a {
 }
 
 @media (max-width: 650px) {
+    /*Nav*/
+    .company-logo {
+        width: 225px;
+    }
+
     /*Footer*/
     footer h5 {
         font-size: 12pt;
