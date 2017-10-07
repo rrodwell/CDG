@@ -94,6 +94,10 @@ main {
 }
 
 @media (max-width: 640px) {
+    main {
+        height: auto;
+    }
+
     .policies {
         margin: 8% auto;
     }
