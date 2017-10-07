@@ -370,6 +370,10 @@ footer a {
         width: 225px;
     }
 
+    .carousel-controls {
+        top: 60%;
+    }
+
     .carousel-prev {
         left: 5px;
     }
