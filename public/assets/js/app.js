@@ -69,15 +69,15 @@ $(document).ready(function() {
 
         if(classNeeded === "mcdonalds") {
 
-            window.location = "packages.html#mcdonalds";
+            window.location = "mcdonalds.html";
 
         } else if(classNeeded === "burgerking") {
 
-            window.location = "packages.html#burgerking";
+            window.location = "burgerking.html";
 
         } else if(classNeeded === "popeyes") {
 
-            window.location = "packages.html#popeyes";
+            window.location = "popeyes.html";
 
         } else {
 
