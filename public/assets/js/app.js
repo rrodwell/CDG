@@ -139,29 +139,9 @@ $(document).ready(function() {
                 imgList: ["ALPHABET-1.jpg","ALPHABET-2.jpg","ALPHABET-3.jpg","ALPHABET-4.jpg"],
                 altName: "Alphabet"
             },
-            remixA: {
-                imgList: ["REMIXA-1.jpg","REMIXA-2.jpg","REMIXA-3.jpg","REMIXA-4.jpg"],
-                altName: "Remix A"
-            },
-            remixB: {
-                imgList: ["REMIXB-1.jpg","REMIXB-2.jpg","REMIXB-3.jpg","REMIXB-4.jpg"],
-                altName: "Remix B"
-            },
-            remixC: {
-                imgList: ["REMIXC-1.jpg","REMIXC-2.jpg","REMIXC-3.jpg","REMIXC-4.jpg"],
-                altName: "Remix C"
-            },
-            simplyModern: {
-                imgList: ["SM-1.jpg","SM-2.jpg","SM-3.jpg","SM-4.jpg"],
-                altName: "Simply Modern - "
-            },
             woodStone: {
                 imgList: ["WOODSTONE-1.jpg","WOODSTONE-2.jpg","WOODSTONE-3.jpg","WOODSTONE-4.jpg"],
                 altName: "Wood & Stone"
-            },
-            craft: {
-                imgList: ["CRAFT-1.jpg","CRAFT-2.jpg","CRAFT-3.jpg","CRAFT-4.jpg","CRAFT-5.jpg","CRAFT-6.jpg"],
-                altName: "Craft 2017"
             }
         },
 
@@ -207,39 +187,13 @@ $(document).ready(function() {
             alt = packages.mcdonalds.alphabet.altName;
             buildModal(imgSrc, alt, imgPath);
 
-        } else if(classNeeded === "remixA") {
-            imgSrc = packages.mcdonalds.remixA.imgList;
-            alt = packages.mcdonalds.remixA.altName;
-            buildModal(imgSrc, alt, imgPath);
-
-        } else if(classNeeded === "remixB") {
-            imgSrc = packages.mcdonalds.remixB.imgList;
-            alt = packages.mcdonalds.remixB.altName;
-            buildModal(imgSrc, alt, imgPath);
-
-        } else if(classNeeded === "remixC") {
-            imgSrc = packages.mcdonalds.remixC.imgList;
-            alt = packages.mcdonalds.remixC.altName;
-            buildModal(imgSrc, alt, imgPath);
-
-        } else if(classNeeded === "simplyModern") {
-            imgSrc = packages.mcdonalds.simplyModern.imgList;
-            alt = packages.mcdonalds.simplyModern.altName;
-            buildModal(imgSrc, alt, imgPath);
-
         } else if(classNeeded === "woodStone") {
             imgSrc = packages.mcdonalds.woodStone.imgList;
             alt = packages.mcdonalds.woodStone.altName;
             buildModal(imgSrc, alt, imgPath);
 
-        } else if(classNeeded === "craft") {
-            imgSrc = packages.mcdonalds.craft.imgList;
-            alt = packages.mcdonalds.craft.altName;
-            buildModal(imgSrc, alt, imgPath);
-
         }
-
-    buildModal(imgSrc, alt, imgPath);});
+    });
 
     $(".bk-packages").click(function() {
 
