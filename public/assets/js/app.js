@@ -193,6 +193,8 @@ $(document).ready(function() {
             buildModal(imgSrc, alt, imgPath);
 
         }
+
+        buildModal(imgSrc, alt, imgPath);
     });
 
     $(".bk-packages").click(function() {
