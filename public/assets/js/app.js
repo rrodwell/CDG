@@ -135,14 +135,14 @@ $(document).ready(function() {
 
         mcdonalds: {
 
-            alphabet: {
-                imgList: ["ALPHABET-1.jpg","ALPHABET-2.jpg","ALPHABET-3.jpg","ALPHABET-4.jpg"],
-                altName: "Alphabet"
-            },
-            woodStone: {
-                imgList: ["WOODSTONE-1.jpg","WOODSTONE-2.jpg","WOODSTONE-3.jpg","WOODSTONE-4.jpg"],
-                altName: "Wood & Stone"
-            }
+            // alphabet: {
+            //     imgList: ["ALPHABET-1.jpg","ALPHABET-2.jpg","ALPHABET-3.jpg","ALPHABET-4.jpg"],
+            //     altName: "Alphabet"
+            // },
+            // woodStone: {
+            //     imgList: ["WOODSTONE-1.jpg","WOODSTONE-2.jpg","WOODSTONE-3.jpg","WOODSTONE-4.jpg"],
+            //     altName: "Wood & Stone"
+            // }
         },
 
         burgerKing: {
@@ -174,28 +174,28 @@ $(document).ready(function() {
 
     $('.modal').modal();
 
-    $(".mc-packages").click(function() {
+    // $(".mc-packages").click(function() {
 
-        var imgPath = "./assets/catalogs/McDonalds/";
+    //     var imgPath = "./assets/catalogs/McDonalds/";
 
-        var myClass = $(this).children().attr("class");
-        var split = myClass.split(" ");
-        var classNeeded = split[2];
+    //     var myClass = $(this).children().attr("class");
+    //     var split = myClass.split(" ");
+    //     var classNeeded = split[2];
 
-        if(classNeeded === "alphabet") {
-            imgSrc = packages.mcdonalds.alphabet.imgList;
-            alt = packages.mcdonalds.alphabet.altName;
-            buildModal(imgSrc, alt, imgPath);
+    //     if(classNeeded === "alphabet") {
+    //         imgSrc = packages.mcdonalds.alphabet.imgList;
+    //         alt = packages.mcdonalds.alphabet.altName;
+    //         buildModal(imgSrc, alt, imgPath);
 
-        } else if(classNeeded === "woodStone") {
-            imgSrc = packages.mcdonalds.woodStone.imgList;
-            alt = packages.mcdonalds.woodStone.altName;
-            buildModal(imgSrc, alt, imgPath);
+    //     } else if(classNeeded === "woodStone") {
+    //         imgSrc = packages.mcdonalds.woodStone.imgList;
+    //         alt = packages.mcdonalds.woodStone.altName;
+    //         buildModal(imgSrc, alt, imgPath);
 
-        }
+    //     }
 
-        buildModal(imgSrc, alt, imgPath);
-    });
+    //     buildModal(imgSrc, alt, imgPath);
+    // });
 
     $(".bk-packages").click(function() {
 
